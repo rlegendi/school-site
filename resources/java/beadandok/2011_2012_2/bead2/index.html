@@ -1,0 +1,204 @@
+<h1>Java alkalmazások, 2011-2012-II</h1>
+
+<h2>2. Beadandó feladat</h2>
+
+<ul>
+<li><strong>Csoport:</strong> IP-bJAG/1</li>
+<li><strong>Beadási határidõ:</strong> 2012. május 7. (<em>a 2. ZH-t megelõzõ hét, hétfõ</em>)</li>
+<li><strong>Bemutatás:</strong> A gyakorlat alkalmával.</li>
+<li>A beadandó feladat elfogadás esetén <em>megfelelt minõsítést</em> kap, amely az év
+végi jegy feltétele. </li>
+<li><p>A beadandókat a küldjétek el e-mailben is, egyetlen ZIP fájlként mellékelve.
+A levél fejléce a következõképp nézzen ki:</p>
+
+<pre><code>csop&lt;csoportszám&gt;_&lt;EHA kód&gt;_bead2
+</code></pre>
+
+<p>Példa:</p>
+
+<pre><code>csop1_LERIAAT_bead2
+</code></pre></li>
+</ul>
+
+<h2>Twitter Bányászat</h2>
+
+<p>Készítsünk egy egyszerû alkalmazást, ami publikusan elérhetõ <a href="https://twitter.com/">Twitter</a>
+adatokat dolgoz fel!</p>
+
+<p><img src="twitter.png" alt="Twitter" title="Twitter" /></p>
+
+<h3>Felépítés</h3>
+
+<p>A program tartalmaz egy kliens és egy szerveralkalmazást.</p>
+
+<p>A kliens utasításokat küld a szervernek, ami végrehajtja azokat.</p>
+
+<p>A szerver egy egyszerû, egyszálas szerveralkalmazás, amelyhez egy adatbázis is
+tartozik.</p>
+
+<p>A programot objektumorientált paradigmáknak megfelelõen készítsd el!
+<strong>Absztrahálj, készíts megfelelõ adatelérési réteget, hozzá tartozó megfelelõ osztályokkal!</strong></p>
+
+<h4>A kliens felépítése</h4>
+
+<p>A kliens induláskor csatlakozik egy szerverhez a megadott portra. Ezután egy
+ciklusban továbbítja a konzolról beolvasott üzeneteket a szervernek, ami
+végrehajtja azokat.</p>
+
+<ul>
+<li>Ha az üzenet tartalma <code>exit</code>, a kliens fejezze be a mûködését.</li>
+<li>Ha az üzenet <code>script fileName.sc</code> formátumú, akkor a kliens olvassa be az adott
+script tartalmát, majd egyesével továbbítsa azokat végrehajtásra a szervernek.</li>
+<li>Minden más üzenetet közvetlenül továbbítson a szervernek.</li>
+</ul>
+
+<h4>A szerver felépítése</h4>
+
+<p>A szerver induláskor figyeljen a megadott porton egy kliens kapcsolódására.</p>
+
+<p>Amennyiben a szervert a <code>-init</code> kapcsolóval indítják, inicializálja az
+adatbázist (hozza létre a szükséges táblákat, esetleg töltse fel minimális
+tesztadatokkal, stb.).</p>
+
+<p>A klienstõl érkezõ üzenetek közül a következõkre szükséges figyelni:</p>
+
+<ul>
+<li><code>exit</code> A szerveralkalmazás fejezze be a mûködést.</li>
+<li><code>uname [, uname]*</code> (azaz felhasználónév, vagy felhasználónevek vesszõvel
+elválasztott listája) A szerver töltse le a felhasználó(k)hoz tartalmazó
+legfrissebb <em>tweeteket</em> (ennek módja az alábbiakban részletesen megtalálható),
+és tárolja el azokat a használt adatbázisban.</li>
+<li><code>stats</code> A tárolt adatokból statisztikák készítése, és prezentálása egy
+egyszerû HTML fájlban.</li>
+</ul>
+
+<h5>Tweet adatok letöltése, tárolása</h5>
+
+<p>Az adatbázisban a következõ adatok tárolandók el:</p>
+
+<ul>
+<li>a felhasználó neve vagy azonosítója,</li>
+<li>a profilképének URL címe, valamint</li>
+<li>a legfrissebb tweet üzenetei (ezek maximális hossza <code>140</code> karakter lehet).</li>
+</ul>
+
+<p>A Twitter közetkezõ, régebbi, publikus REST API-ja alapján lekérdezhetõ egy XML
+formátumú fájlban egy adott felhasználóhoz tartozó legfrissebb üzenetek a <code>user_id</code>
+alapján:</p>
+
+<pre><code>http://twitter.com/statuses/user_timeline.xml?id=&lt;user id&gt;
+</code></pre>
+
+<p>Példa URL:</p>
+
+<p><a href="http://twitter.com/statuses/user_timeline.xml?id=legendi_ELTE"><code>http://twitter.com/statuses/user_timeline.xml?id=legendi_ELTE</code></a></p>
+
+<p>A felhasználóhoz tartozó kép URL címe a következõ sor alapján találahtó meg:</p>
+
+<pre><code>    &lt;profile_image_url&gt;...&lt;/profile_image_url&gt;
+</code></pre>
+
+<p>Illetve a felhasználó által írt tweetek a következõ sorok alapján találahtók
+meg:</p>
+
+<pre><code>    &lt;text&gt;...&lt;/text&gt;
+</code></pre>
+
+<h5>Számolandó statisztika</h5>
+
+<p>A szerver legyen képes egy egyszerû HTML fájl elõállítására, amely minimális
+statisztikákat tartalmaz az adatbázisban tárolt adatokról.</p>
+
+<p>Ez legyen egy táblázat, amely tartalmazza minden felhasználóhoz a képét, nevét,
+valamint az általa írt összes bejegyzés hosszának összegét.</p>
+
+<h3>Technikai részletek</h3>
+
+<ul>
+<li>A használt port legyen a HTTP (<code>80</code>).</li>
+<li>A kliens csatlakozzon lokálisan (<code>localhost</code>).</li>
+<li>A generált HTML fájl neve legyen <code>index.html</code>.</li>
+</ul>
+
+<h4>Példák</h4>
+
+<p>Az alábbiakban néhány példát láthattok a bemeneti és kimeneti fájlokra.</p>
+
+<h4>Példa script fájl: runme.sc</h4>
+
+<pre><code>joshbloch,norvig
+Kurt_Vonnegut
+stats
+exit
+</code></pre>
+
+<h4>Példa HTML kimeneti fájl</h4>
+
+<h5>Forráskód</h5>
+
+<pre><code>&lt;html&gt;
+&lt;body&gt;
+&lt;table border='1'&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Picture&lt;/th&gt;
+        &lt;th&gt;Id&lt;/th&gt;
+        &lt;th&gt;Char Count&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;&lt;img src='http://a0.twimg.com/profile_images/2111886999/TWITTER_PROFILE_PIC_normal.jpg'/&gt;&lt;/td&gt;
+        &lt;td&gt;FamilyGuyonFOX&lt;/td&gt;
+        &lt;td&gt;2027&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;&lt;img src='http://a0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png'/&gt;&lt;/td&gt;
+        &lt;td&gt;norvig&lt;/td&gt;
+        &lt;td&gt;106&lt;/td&gt;
+    &lt;/tr&gt;
+
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h5>Kinézet</h5>
+
+<table border='1'>
+    <tr>
+        <th>Picture</th>
+        <th>Id</th>
+        <th>Char Count</th>
+    </tr>
+
+    <tr>
+        <td><img src='http://a0.twimg.com/profile_images/2111886999/TWITTER_PROFILE_PIC_normal.jpg'/></td>
+        <td>FamilyGuyonFOX</td>
+        <td>2027</td>
+    </tr>
+
+    <tr>
+        <td><img src='http://a0.twimg.com/sticky/default_profile_images/default_profile_5_normal.png'/></td>
+        <td>norvig</td>
+        <td>106</td>
+    </tr>
+
+</table>
+
+<h2>Továbbfejlesztési lehetõségek</h2>
+
+<ul>
+<li>A program tökéletesen elkészíthetõ egyetlen adattábla használatával.
+Természetesen <em>szebb</em>, ha az adatok megfelelõen el vannak választva
+(userek/tweetek).</li>
+<li>A használt REST API már erõsen elavult (<em>deprecated</em>). Újabb változatok
+használatához azonban komolyabb authentikációra van szükség, amely meghaladja
+a jelen tárgy kereteit.</li>
+<li>A szükséges adatok több formátumban is rendelkezésre állnak (XML, JSON,
+Atom/RSS, stb.), illetve mindegyikhez rengeteg hasonló infó rendelkezésre áll.
+Lehet kísérletezni, hogy melyik használata a célravezetõbb.</li>
+<li>Számos egyéb hasznos dolog kideríthetõ a hivatalos <a href="https://dev.twitter.com/docs/api">Twitter REST API</a>
+használatán keresztül, érdemes kutakodni egy keveset ;-)</li>
+<li>Egy <a href="http://www.ibm.com/developerworks/xml/library/x-twitterREST">hosszabb tutorial</a>, ami kicsit részletesebben tárgyalja
+a REST API használatát.</li>
+</ul>

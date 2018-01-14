@@ -1,0 +1,42 @@
+IP-08ctPNY2EG/1 (BSc,08,C), Csütörtök 10:00-12:00, D 00-411 (PC7)
+
+Név                     EHA     1 2 3 4 5 6  B1 ZH 7 8 9 10 A B2 ZH2 T  +/-              Jegy Pótlás
+====================================================================================================
+Ács Márton		ACMSAAI ++++++000000 -#  5 00+++++000; #  3  3  11+ -  1- = +10     4
+Baráth Ádám		BAASAAI +0+0+00000+0  #  5 +++++0+0--; #  5  5  10+ -  2- = +8      5
+Benedek Norbert+++	BENSAAI ++++++00+000  #  5 +++++++000; #  4  4  17+ -  0- = +17     5
+Bubla Gábor		BUGSAAI +0+++0000000 -#  5 00+0000000; #  2  3   5+ -  1- = +4      3
+Décsi Dániel		DEDSAAI +0+++00000++ -#  5 ++--+0+000; #  4  4  10+ -  3- = +7      4
+Dömötör Endre Roland	DOEQAAI --+0--00----  x  x ----------; x  x  x   1+ - 18- = -17     \
+Hunyady Mihály		HUMSAAI ++++++000000  #  5 --+++++000; #  4  2  11+ -  2- = +9      4
+Illés Dániel		ILDSAAI +0+0+0000000  x  x ----------; x  x  x   3+ - 10- = -7      \
+Kun Tamás Ernõ		KUTSAAI +0+++0--00--  x  x ----------; x  x  x   4+ - 14- = -10     \
+Lángi Balázs		LABOAAB ++++++0000++  #  4 00+++++000; #  3  3  13+ -  0- = +13     4
+Lépold Beáta		LEBQABI +0++++000000  #  2 00----+0--; #  2  3   6+ -  6- = 0       2
+Maczika Száva Jenõ	MASRAAI ++++++000000  #  5 0000------; #  5  5   6+ -  6- = 0       5
+Magyarkuti Barna Ádám	MABPAFB +0--+00000++ -#  5 00--+00000; #  25 4   5+ -  5- = 0       45
+Mészáros Gergõ		MEGSACI ++++++000000  #  5 ++++--+000; #  5  3  11+ -  2- = +9      5
+Nagy András		NAASAEI +0++++000000 -#  2 +0----+0--; x  x  x   7+ -  7- = 0       \
+Pálos József+++		PAJQABI --++--00--00  #  3 00++00+000; x  x  x   8+ -  6- = +2      \
+Peitli Zoltán		PEZQAAI ++++++--00++  #  3 00++++0000; #  24 4  12+ -  2- = +10     34
+Péteri Miklós		PEMSAAI ++++++000000  #  2 +++++++000; #  2  4  13+ -  0- = +13     3
+Poroszkai Dániel	PODPAAI --++++000000  #  5 +0+++++000; #  5  3  10+ -  2- = +8      4
+Rontó Balázs		ROBSAAI +++++0000000 M#  2 00+000+000; @  2  2   7+ -  0- = +7      2
+Sándor János		SAJSAAI ++++++00++00  #  4 --+++++000; #  4  2  13+ -  2- = +11     4
+Stiber Judit Ildikó	STJSAAI ++++++00++++  #  5 +++++++000; #  3  14 17+ -  0- = +17     t4
+Varga Tibor		VATSABI ++++++--00--  x  x ----------; x  x  x   6+ - 14- = -8      \
+Zöld Gábor		ZOGSAAI 00000000--00 =#  2 00--000000; #  2  2   0+ -  4- = -4      2 ++++
+Tar Balázs              TABSABI ++++++000000 -#  3 0000000000; #  2  3   6+ -  1- = +5      3
+
+Jelmagyarázat:
+--------------
+x - Nem adott le/Nem jelent meg
+t - Pót teszt
+z - Pót ZH
+u - UV
+\ - Megtagadva
+? - Még egyeztetünk
+* - Még javítással lógok
+
+Amennyiben több jegy van egymás mellett, utóbbi a javítás.
+

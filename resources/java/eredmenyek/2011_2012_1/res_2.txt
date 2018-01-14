@@ -1,0 +1,39 @@
+IP-08ctPNY2EG/2 (BSc,08,C), Csütörtök 8:00-10:00, D 2-124 (Microsoft Labor)
+
+Név                     EHA     1 2 3 4 5 6  B1 ZH 7 8 9 10 A B2 ZH2 T  +/-              Jegy Pótlás
+====================================================================================================
+Antal Péter		ANPSAAI +++0+000--00 -#  2 00++000000; #  2  2   6+ -  3- = +3      2
+Árvay Brigitta		ARBRAAI +0+++0000000  #  1 00----00--; x  x  x   4+ -  6- = -2      \
+Balázs István		BAISAAI ++--+000--00  #  3 ++++0000--; #  2  3   7+ -  6- = +1      3
+Besenyei Szabolcs Zsolt	BESSAAI +0++++--00--  #  3 ++++++00+0; #  4  4  12+ -  4- = +8      4
+Bognár Gergõ		BOGQAAI --++++000000  #  5 ++++--00++; #  5  4  10+ -  4- = +6      5
+Bóta Balázs		BOBSAAI ++----------  x  x ------00--; x  x  x   2+ - 18- = -16     \
+Csejtei Dávid		CSDSAAI +++++0000000  #  5 00+0+000++; #  24 3   9+ -  0- = +9      34
+Ferenczi Krisztián	FEKSAAI +++++0000000 -#  3 00+0000000; #  3  3   6+ -  1- = +5      3
+Gál Olivér		GAOSABI +0++--000000  #  5 ++--+00000; #  4  4   6+ -  4- = +2      4
+Juhász Anita		JUASAAI +0+++0--0000 -#  2 00--000000; #  2  113 4+ -  5- = -1      2
+Krámli Erik Márkus	KRESAAI +++++0000000  #  5 00+++000+0; #  3  5   9+ -  0- = +9      4
+Lányi Viktória		LAVSAAI ++--++000000  #  5 +++++000--; #  4  14  9+ -  4- = +5      t4
+Peknyó Szilvia		PESSAAI ++++00000000  #  5 +++0+000--; #  4  3   8+ -  2- = +6      4
+Reményi Csaba		RECLAAT ++++++00++00  #  5 00++++00++; #  5  4  14+ -  0- = +14     5
+Szabó Ádám		SZASACI +0+++0000000  #  2 --++--0000; #  13 2   6+ -  4- = +2      z2
+Szabó Mihály		SZMSAAI +++++0000000  #  5 +0++++00+0; #  4  3  11+ -  0- = +11     4
+Szabó Richárd		SZRSAAI ++++++00++--  #  5 ++++++00++; #  4  4  16+ -  2- = +14     5
+Tóth András Tibor	TOASAAI ++++++000000  #  3 00+0000000; #  2  3   7+ -  0- = +7      3
+Zrinszky Anett Veronika	ZRASAAI ++--+0000000 -#  5 ++--000000; #  25 13  5+ -  5- = +0      t4
+
+Hegedûs Dániel          HEDSACI ----0000----  x  2 00----00--; x  x  x   0+ - 14- = -14     \
+Schwarcz Ádám		SCARAAI ++++++00++--  #  5 ++++++00--; #  5  4  14+ -  4- = +10     5
+Víg Bálint		VIBRAAI --+++0000000 -#  5 --+00000--; #  3  2   4+ -  7- =  -3     3 +++++
+
+Jelmagyarázat:
+--------------
+x - Nem adott le/Nem jelent meg
+t - Pót teszt
+z - Pót ZH
+u - UV
+\ - Megtagadva
+? - Még egyeztetünk
+* - Még javítással lógok
+
+Amennyiben több jegy van egymás mellett, utóbbi a javítás.

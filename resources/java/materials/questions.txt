@@ -1,0 +1,8 @@
+C:Hany versszakbol all a himnusz?:4:6:8:false:false:true
+S:Mely szamok primek?:1:2:7:false:true:true
+C:Melyik Magyarorszag leghosszabb folyoja?:Duna:Tisza:Raba:false:true:false 
+C:Melyik a legkisebb romai szam?:LV:XCI:XXI:false:false:true
+C:Mit csinal az, aki "habar"?:Foz:Sportol:Gyorsan beszel:true:false:false
+C:Mi fuzodik Otto von Bismarck nevehez?:Autogyartas:Sajtgyartas:Nemet egyseg:false:false:true
+C:Hogy hivtak az 1957-ben fellott Szputnyik II. utasat?:Lajko:Danka:Csajka:true:false:false
+S:Mely orszagok hatarosak Magyarorszaggal?:Szlovenia:Bulgaria:Austria:true:false:true

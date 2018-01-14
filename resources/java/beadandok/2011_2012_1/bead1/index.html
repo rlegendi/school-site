@@ -1,0 +1,88 @@
+<h1>Programozási nyelvek (Java)</h1>
+
+<p><strong>2011-2012-1, 1. Beadandó feladat</strong></p>
+
+<ul>
+<li><strong>Kiírás idõpontja:</strong> 2011. október 14.</li>
+<li><strong>Beadási határidõ:</strong> <strike>2011. október 21. (<em>ZH-t megelõzõ hét, péntek</em>), 23:00</strike> 2011. október 25., 23:00 (<em>Meghosszabítva</em>)</li>
+<li><em>Amennyiben bármi kérdés merül fel a feladattal kapcsolatban, a gyakorlatvezetõk e-mailben segítenek.</em></li>
+</ul>
+
+<h2>A feladat leírása</h2>
+
+<p>Készítsünk el egy osztályozó implementációt (<code>numbers.Classifier</code>)! Ennek egyetlen konstruktora legyen, amely egy pozitív egész számot vár
+paraméterként (<em>ezt ellenõrizni nem szükséges</em>).</p>
+
+<p>A megvalósítandó osztály feladata, hogy az adott szám pozitív osztóinak meghatározása alapján három csoportba sorolja a számokat.
+Legyen <code>sigma(n)</code> az <code>n</code> szám osztóinak összege (az <code>1</code>-et, önmagát beleértve), ekkor az <code>n</code> számot a következõképp osztályozzuk: </p>
+
+<ul>
+<li><em>tökéletes szám</em>, ha <code>sigma(n) == 2n</code></li>
+<li><em>hiányos szám</em>, ha <code>sigma(n) &lt; 2n</code></li>
+<li><em>bõvelkedõ szám</em>, ha <code>sigma(n) &gt; 2n</code></li>
+</ul>
+
+<h2>Tecnhikai részletek</h2>
+
+<ul>
+<li>A <code>numbers.Classifier</code> osztályban implementálandó függvények:
+<ul>
+<li><code>int getNumber()</code> - visszaadja a konstruktornak megadott számot</li>
+<li><code>int numberOfFactors()</code> - visszaadja a szám osztóinak a számát (az <code>1</code>-et, önmagát beleértve)</li>
+<li><code>boolean isFactor(int)</code> - igazat ad vissza, ha a megadott szám osztó, hamisat különben</li>
+<li><code>int[] getFactors()</code> - visszaadja az osztók tömbjének egy <em>másolatát</em></li>
+<li><code>boolean isPerfect()</code>, <code>boolean isAbundant()</code>, <code>boolean isDeficient()</code> - megadja, hogy a konstruktornak megadott szám tökéletes, bõvelkedõ vagy hiányos szám-e</li>
+<li>Szükséges még egy statikus <code>boolean isPerfect(int)</code> függvény, ami el tudja dönteni a paraméterként megadott számról, hogy tökéletes-e vagy sem</li>
+</ul></li>
+<li>Készíts továbbá egy egyszerû statikus <code>int sum(int[] arr)</code> segédfüggvényt is, amelyet a <code>numbers.common.Utils</code> osztály tartalmazzon,
+és feladata a paraméterként megadott tömb elemeinek összegzése.</li>
+</ul>
+
+<h3>Beadás módja</h3>
+
+<p><strong>Az alábbi kritériumoknak eleget nem tévõ beadandó feladatokat érvénytelennek tekintjük!</strong></p>
+
+<ul>
+<li><p>A beadandókat a gyakorlatvezetõnek küldjétek el e-mailben, egyetlen ZIP
+fájlként mellékelve (<em>nem tar, nem tgz, nem rar, stb.</em>). A levél fejléce a következõképp nézzen ki:</p>
+
+<pre><code>csop&lt;csoportszám&gt;_&lt;EHA kód&gt;_bead1
+</code></pre>
+
+<p>Példa:</p>
+
+<pre><code>csop4_LERIAAT_bead1
+</code></pre></li>
+<li><p>A ZIP fájl tartalma a következõ szerkezettel rendelkezzen:</p>
+
+<pre><code>LERIAAT         -   EHA kódnak megfelelú könyvtár
++---doc         -   Generált Javadoc állományok
++---numbers     -   Forársállományok, alcsomagok
+|   \---...
+\---README      -   Egy readme fájl.
+</code></pre></li>
+<li><p>A melléklendõ <code>README</code> fájl tartalma a következõ legyen:</p>
+
+<pre><code>Elsõ beadandó feladat, 2011-2012/I. félév
+    &lt;Név&gt;
+    &lt;EHA&gt;
+    &lt;E-mail cím&gt;
+    &lt;Beadás dátuma&gt;
+</code></pre>
+
+<p>Ezen kívül bármi érdemleges információt tartalmazhat, ami releváns lehet a
+megoldással kapcsolatban.</p></li>
+<li><p>A programnak tartalmaznia kell a megfelelõen generált Javadoc dokumentációt a <code>doc</code> könyvtárban.
+Csak a megoldás során készített osztályokhoz szükséges dokumentációt írni, a feladat kiírásához adott
+tesztállományhoz nem.</p></li>
+<li><p>A programnak az alábbi egyetlen paranccsal fordulnia és futnia kell, figyelmeztetések
+és hiba nélkül. <em>Az olyan beadandó feladatot, amely nem fordul, mérlegelés nélkül elvetjük.</em></p>
+
+<pre><code>$&gt; mkdir bin &amp;&amp; javac numbers/test/TestClassifier.java -d bin &amp;&amp; cd bin &amp;&amp; java numbers.test.TestClassifier
+</code></pre></li>
+<li><p>A beadandó feladat <em>megfelelt minõsítést kap</em>, amennyiben (a fenti feltételeken túl) a mellékelt
+tesztfájl mellett hiba nélkül fut. <em>A tesztfájlon semmilyen módosítás nem végezhetõ!</em>
+A tesztfájl az alábbi linken elérhetõ: <a href="TestClassifier.java">TestClassifier.java</a></p></li>
+</ul>
+
+</body>

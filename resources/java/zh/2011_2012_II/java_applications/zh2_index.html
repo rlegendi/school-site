@@ -1,0 +1,75 @@
+<h1>Java alkalmazások, II. ZH</h1>
+
+<ul>
+<li><strong>Félév:</strong> 2011-2012-II</li>
+<li><strong>Csoport:</strong> IP-bJAG/1</li>
+<li><strong>Dátum:</strong> 2012.05.14., 14:00-16:00</li>
+</ul>
+
+<h1>Minimális regisztrációs szolgáltatás</h1>
+
+<p>Készítsünk egy egyszerû regisztrációs réteget Javaban.</p>
+
+<p>A felhasználók egyszerû klienseken keresztül tudjanak regisztrálni, valamint a
+bejelentkezésre is nyújtson felületet az alkalmazás.</p>
+
+<h2>Megvalósítandó szolgáltatások</h2>
+
+<p>A kettesért a feladat kötött, minden további probléma tetszõleges sorrendben
+megoldható, és +1 jegyet ér.</p>
+
+<h3>Kettesért</h3>
+
+<p>Készíts egy egyszerû, egyszálas szerveralkalmazást. A szerver a kliensek felé
+a következõ szolgáltatásokat nyújtsa a helyi gép 80-as protján:</p>
+
+<ul>
+<li>Regisztráció</li>
+<li>Bejelentkezés</li>
+</ul>
+
+<p>A kommunikációt megoldhatod RMI segítségével, vagy saját protokoll szerint
+socketen keresztül.</p>
+
+<p>Regisztráció esetén felhasználóhoz tartsuk nyilván az e-mail címét valamint a jelszavát.</p>
+
+<p>Bejelentkezésnél egy egyszerû logikai értéket adjon vissza a szerver: a megadott
+jelszó egyezik-e a tárolt értékkel!</p>
+
+<h3>+1 jegy</h3>
+
+<p>A kliens legyen képes a lekérdezni a szervertõl a felhasználókhoz tartozó e-mail
+címek egy lexikografikusan rendezett listáját!</p>
+
+<h3>+1 jegy</h3>
+
+<p>Írjunk egy bruteforcer klienst, amely egy tetszõleges felhasználóhoz megpróbálja
+kitalálni annak jelszavát.</p>
+
+<p>A szükséges jelszavakat egy <code>dictionary.txt</code> fájlból vegye, és egyesével
+próbáljon bejelentkezni a szerverre a beolvasott jelszavak segítségével.</p>
+
+<h3>+1 jegy</h3>
+
+<p>Legyen lehetõsége a kliensnek backupra utasítani a szervert. Ekkor minden adatot
+mentsen le a szerver egy <code>backup.txt</code> fájlba.</p>
+
+<p>A szerver legyen képes az adatokat vissza is tölteni (minden régebbi adatot
+ezesetben el lehet dobni).</p>
+
+<h3>+1 jegy</h3>
+
+<p>A szerver a biztonsági mentés készítésekor JDBC segítségével adatbázisba is
+mentse az adatokat. </p>
+
+<h2>Megjegyzések</h2>
+
+<ul>
+<li>Ahol a feladatleírás félreérthetõségre ad okot, ott minden ésszerû
+feltételezést elfogadunk (<em>ezt mindenképp jelezd</em>).</li>
+<li>Hibakezeléssel, nem megfelelõ inputtal ne foglalkozz! <strong>Elsõdleges az idõ!</strong></li>
+<li><strong>Tetszõleges fejlesztõkörnyezet használható.</strong></li>
+<li>Éles környezetben ugye mindenki tudja, hogy nem tárolunk plaintextben
+jelszavakat? Legjobb egyszerû egyirányú hash algoritmusokat használni (pl.
+SHA2-256/512 algoritmus szerint kódolva tárolni õket).</li>
+</ul>

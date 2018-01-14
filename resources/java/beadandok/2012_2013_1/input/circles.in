@@ -1,0 +1,5 @@
+4
+circle fill:red;stroke:black;stroke-width:0.1cm 75 50 50
+circle fill:orange;stroke:black;stroke-width:0.1cm 120 50 50
+circle fill:green;stroke:black;stroke-width:0.1cm 50 90 50
+circle fill:blue;stroke:black;stroke-width:0.1cm 95 90 50

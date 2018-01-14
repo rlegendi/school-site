@@ -1,0 +1,33 @@
+#   ETR            Név                    ZH1              ZH2              Teszt            +/-   PotZH   PotTeszt   UV   Eredmény
+------------------------------------------------------------------------------------------------------------------------------
+?   BOBRABI.ELTE   Bónis Balázs           Közepes (3)      Elégséges (2)    Elutasitva       +5    -       1          x    Sz
+    CSBRACI.ELTE   Cseh Bálint            Elégséges (2)    Nem jelent meg   Nem jelent meg   -3    -       -          -    x
+?   CSTRAAI.ELTE   Cseke Tímea            Elégséges (2)    Jó (4)           Elutasitva       +8    -       1          2    Sz
+    DUPOAAI.ELTE   Duleba Péter           Nem jelent meg   Nem jelent meg   Nem jelent meg   +6    1       2          -    x
+#   ENTRAAI.ELTE   Enyedi Tamás           Elégséges (2)    Elutasitva       Elutasitva       +12   2       2          -    2
+#   ISZRAAI.ELTE   Istvánfi Zsolt         Jeles (5)        Jeles (5)        Közepes (3)      +19   -       -          -    5
+#   KIARACI.ELTE   Kiss Ákos              Jeles (5)        Jeles (5)        Elégséges (2)    +17   -       -          -    5
+#   KOIPAAI.ELTE   Kohn István            Jeles (5)        Jeles (5)        Közepes (3)      +4    -       -          -    4
+#   KOLOAAI.ELTE   Koroknai László Áron   Jó (4)           Jeles (5)        Elégséges (2)    +11   -       -          -    5 (*)
+#   LADRAAI.ELTE   Lavati Dávid           Jeles (5)        Jeles (5)        Közepes (3)      +17   -       -          -    5
+#   LAGMABT.ELTE   Lakatos Gábor          Jó (4)           Közepes (3)      Elutasitva       +5    -       2          -    3 (*)
+#   MAJRAAI.ELTE   Margli János           Közepes (3)      Elégséges (2)    Elégséges (2)    +12   -       -          -    3
+?   OCSMAAT.ELTE   Ocskó Szabina          Elégséges (2)    Elégséges (2)    Elutasitva       +6    -       1          1    Sz
+#   SOPRAAI.ELTE   Somogyi Péter          Jeles (5)        Jeles (5)        Közepes (3)      +19   -       -          -    5
+#   SZBRACI.ELTE   Szabó-Demény Balázs    Elégséges (2)    Elutasitva       Elégséges (2)    +3    1       -          -    x
+#   SZKRAAI.ELTE   Szabari Krisztián      Közepes (3)      Elégséges (2)    Közepes (3)      +5    -       -          -    3
+    VACRAAI.ELTE   Vári Csaba Géza        Jó (4)           Jeles (5)        Elégséges (2)    +17   -       -          -    5
+
+Jelmagyarázat:
+--------------
+  [1-5] - Érdemjegy
+  x     - Nincs gyakjegy
+  X     - Gyakjegy megtagadva a hiányzások miatt
+  Sz    - Gyakjegy a szóbeli vizsga függvényében
+  ppm   - Pót +/-
+  pzh   - Pót ZH
+  pt    - Pót elméleti teszt
+  ?     - Még megbeszélés tárgya
+  N/A   - Nem áll rendelkezésre (nem adta be, nem submitolta, nem töltötte ki, etc.)
+  (*)   - Megbeszélés alapján
+

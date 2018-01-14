@@ -1,0 +1,50 @@
+<h1>1. zárthelyi dolgozat</h1>
+
+<p>2010-2011, II. félév</p>
+
+<hr />
+
+<p>A zárthelyi során a beadandó feladat egy módosított változatát vesszük alapul. A szükséges fájlokat egyben megtaláljátok a mellékletek között, az elsõ feladat az ömlesztett fájlok megfelelõ struktúrába szervezése, a fordítási hibák kiszûrése.</p>
+
+<p>A program tartalmaz apróbb hiányosságokat, hibákat; ezekbõl kell tetszõleges sorrendben implementálni, javítani az általatok kiválasztott feladatokat. Minden megoldás eggyel jobb érdemjegyet eredményez (az alább felsorolt csoportok szerint), amely helyességét (a mellékletben szintén megtalálható) <code>media.test.MainTest</code> tesztfájl biztosítja. <strong>A tesztfájlon módosítani szigorúan tilos.</strong></p>
+
+<p>A feladatok, érdemjegyek a következõképp alakulnak:</p>
+
+<ul>
+<li><strong>2</strong>: <em>Egy fordítható project kialakítása.</em> Ehhez szükséges az osztályok megfelelõ csomaghierarchiába szervezése, valamint a fordítási hibák feloldása (ezt a hiányzó <code>import</code> utasítások okozzák)</li>
+<li><strong>3, 4</strong>: <em>Az I. feladatcsoportból választott tetszõleges feladatok megoldása.</em> Három különbözõ feladatból válogathattok, azt készíthetitek el, amelyik csak tetszik, azonban <em>ezekkel maximum négyes érdemjegy szerezhetõ.</em></li>
+<li><strong>5</strong>: <em>II. feladatcsoportból választott tetszõleges feladat megoldása.</em> Két különbözõ feladatból válogathattok, azt készíthetitek el, amelyik csak tetszik, ezekkel érhetõ el ötös érdemjegy.</li>
+</ul>
+
+<p>A feladatok egyszerûek, mindegyik megoldhaó 2-7 sorban, azonban feltételezik a használt fogalmak, eszközök mély ismeretét. </p>
+
+<h2>Feladatok</h2>
+
+<h3>Az elégséges osztályzatért</h3>
+
+<p>Az elsõ feladat az, hogy szervezzétek a megfelelõ csomaghierarchiába az osztályokat, fordítsátok a mellékelt projectet. Ez nem lesz olyan egyszerû, mert minden <code>import</code> utasítás törlésre került. Amennyiben ezzel elkészülsz, és hiba nélkül fordul a program, megvan az elégséges érdemjegy. </p>
+
+<h3>I. feladatcsoport</h3>
+
+<p>Három egyszerûbb feladat közül választhattok, ezekkel szerezhetõ <em>maximum 4-es</em> érdemjegy. Az implementációs részleteket a tesztfájlban megtaláljátok.</p>
+
+<ul>
+<li><p>A használt <code>media.data.Rating</code> osztály azonosságvizsgáló függvényét valaki megírta, ám bizonyos esetekben nem várt mûködést produkál. Hiba van az implementációban, javítsd ki!</p></li>
+<li><p>Szeretnénk egy olyan lekérdezéseket megfogalmazni a <code>media.Media</code> osztály segítségével, amely lehetõvé teszi a <em>medián értékelés</em> értékének meghatározását (<em>az értékelések rendezett sorozatának középsõ eleme, amennyiben páros elem van, akkor az elem meghatározása lefelé kerekítéssel történjék!</em>)</p></li>
+<li><p>Szeretnénk egy olyan szolgáltatást a <code>media.Media</code> osztályban, amely képes nagybetûsíteni (<em>"kapitalizálni"</em>) a tárolt címeket: a cím elsõ karakterét nagybetûre cseréli, az összes többit pedig kicsire.</p></li>
+</ul>
+
+<h3>II. feladatcsoport</h3>
+
+<p>Ötöst az kaphat, aki az eddigieket megcsinálta, és a következõ két bonyolultabb feladat közül is megold legalább egyet:</p>
+
+<ul>
+<li><p>A forráskódban található egy <code>media.data.EBook</code> osztály legyen a <code>media.data.Book</code> osztály leszármazottja. Hogy ezt a funkciót a rendszer le tudja ellenõrizni, implementálnod kell a megadott statikus <code>getDefaultEBookCollection</code> függvényt is (ez adjon vissza legalább egy tetszõleges, általad készített <code>EBook</code> példányt)!</p></li>
+<li><p>Tedd klónozhatóvá az <code>AMedia</code> osztályt!</p></li>
+</ul>
+
+<h2>Mellékletek</h2>
+
+<ul>
+<li>A szükséges állományokat tartalmazó <a href="zh_1_src.zip">archívum</a>.</li>
+</ul>

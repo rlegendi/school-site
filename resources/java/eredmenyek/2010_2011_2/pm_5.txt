@@ -1,0 +1,42 @@
+IP-bJAG/5, 5. csoport, Péntek 12:00-14:00
+
+Név                         ETR            1. gyak   2. gyak   3. gyak   4. gyak   5. gyak   6. gyak   7. gyak   I. Beadandó   I. ZH   10. gyak   11. gyak   12. gyak   II. Beadandó   +/-   Teszt    II. ZH   III. ZH   Pót teszt   Jegy
+=========================================================================================================================================================================================================================================
+Balint Csaba Levente        BACQABI.ELTE   ++        --        --        --        --        --        --         ~            ~       --         --         --          ~             -16       #    #        #         #           #
+Balogh Dávid                BADPAAG.ELTE   ++        ++        ++        ++        0         ++        ++        OK            5       ++         --         --         OK             +10    6p/1    3        #         1           UV
+Berki Gábor                 BEGLADT.ELTE   ++        ++        ++        ++        ++        ++        ++        OK            4       --         ++         0          OK             +14       M    M        x         x           4
+Bertók Attila               BEALAGT.ELTE   ++        ++        --        ++        --        ++        --        OK            5       --         ++         --         OK               0   12p/4    3        x         x           4
+Bubalo Ognjen               BUOPAAI.ELTE   ++        ++        ++        0         0         --        ++        OK            5       ++         0          0          OK              +8       M    M        x         x           5
+Cselle Ágnes                CSAPAAI.ELTE   ++        ++        ++        --        ++        +         ++        OK            5       ++         --         0          OK (*)          +9       M    M        x         x           5
+Csendes Csongor             CSCPAAI.ELTE   ++        ++        ++        --        +         0         ++        OK            5       ++         +          0          OK             +10       M    M        x         x           5
+Fehérvári Zsolt             FEZOAAI.ELTE   ++        ++        ++        --        ++        ++        ++        OK            5       ++         +          0          OK             +13   11p/3    4        x         x           4
+Fodor István                FOIOAAI.ELTE   ++        ++        ++        ++        ++        0         ++        OK            5       ++         +          0          OK (*)         +15    8p/2    4        x         x           4
+Göndör Gábor                GOGOABI.ELTE   ++        0         ++        ++        --        0         --        OK            5       0          --         --         OK               0   12p/4    1        3         x           4
+Höltzl Tamás                HOTLAAT.ELTE   --        ++        ++        ++        ++        ++        ++        OK            5       ++         0          0          OK (*)         +12       M    M        x         x           5
+Karácsonyi Mátyás           KAMOAAI.ELTE   ++        ++        --        ++        0         +         ++        OK            5       ++         --         --         OK              +5    9p/2    5        x         2.5 (I,J)   4   
+Kocsis Ádám                 KOAPACI.ELTE   ++        ++        ++        ++        ++        ++        ++        OK            5       ++         ++         0          OK             +18       M    M        x         x           5
+Kovács Krisztina Magdolna   KOKPADI.ELTE   ++        ++        ++        ++        ++        ++        ++        OK            5       ++         0          ++         OK             +18   10p/3    4        4         5 (J)       5
+Krakóczki Richárd           KRRRAAI.ELTE   ++        ++        ++        ++        ++        --        ++        OK            5       ++         +          --         OK             +11    9p/2    4        x         x           4
+Kungl Richárd               KURNAAI.ELTE   --        ++        +         ++        +         +         --        OK            4       ++         +          --         OK              +4   10p/3    2        x         x           3
+Lepárt Levente Béla         LELPAAI.ELTE   ++        ++        ++        ++        ++        ++        ++        OK            5       ++         ++         0          OK (*)         +18    5p/1    4        x         4           5
+Novák Zsolt                 NOZRAAI.ELTE   ++        ++        ++        ++        ++        +         ++        OK            5       --         +          0          OK             +12    7p/1    x        3         3           4
+Orosz Sándor Zoltán         ORSOAAI.ELTE   ++        ++        ++        ++        --        ++        --        OK            5       --         +++        --         OK              +5    8p/2    5        x         x           4
+Pusoma Gábor Róbert         PUGPAAI.ELTE   ++        ++        ++        ++        ++        ++        ++        OK            5       ++         +          0          OK             +17       M    M        x         x           5
+Solymosi Ádám Gábor         SOAPAAI.ELTE   ++        ++        ++        0         ++        ++        ++        OK            5       ++         +          --         OK             +13       M    M        x         x           5
+Vaskó Péter                 VAPMADT.ELTE   ++        --        ++        ++        ++        ++        ++        OK            5       --         +          --         OK              +7   10p/3    2        x         x           3
+Vigh Zsombor László         VIZMAAT.ELTE   --        --        --        --        --        --        --         ~            ~       --         --         --          ~             -20       #    #        #         #           #
+Zádori Ádám                 ZAAPAAI.ELTE   ++        ++        ++        ++        ++        ++        ++        OK            4       ++         ++         0          OK             +18       M    M        x         x           4
+
+Jelmagyarázat:
+==============
+~   Nem adott le beadandót
+*   Személyes bemutatás
+@   Megbeszélés alatt
+M   Megajánlott jegy az I. ZH érdemjegye alapján (utolsó elõadás)
+#   Nem adható gyakorlati jegy
+H   Haladékot kért (és emlékeztem is rá :-))
+Pt  Pót teszt szükséges
+Pzh Pót ZH szükséges
+UV  Utóvizsga szükséges
+I   Írásbeli vizsgát tett
+J   Javítási kísérlet

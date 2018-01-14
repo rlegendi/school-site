@@ -1,0 +1,136 @@
+
+Készíts olyan elosztott rendszert, amely az alábbiak szerint működik.
+
+A rendszer gyárakkal foglalkozik és azok termékeivel.
+A főprogram a Foprogram nevű osztályban található;
+a programban szereplő osztályok ne legyenek csomagban.
+A főprogram elindítja a gyárakat,
+amelyek az 12345, 12346, 12347 stb. portokon lesznek elérhetőek
+a többi gyár számára a lokális gépen. (A gyárak számát lásd lejjebb.)
+A gyárak indításkor paraméterként kapják meg, hogy őket melyik sorszámú port illeti.
+
+A főprogram ezenkívül elindítja az RMI névszolgáltatást,
+és létrehoz egy központi objektumot is,
+amelyet RMI objektumként bejegyez "kozpont" néven.
+Az objektum interfészét a KozpontInterfesz adja (ami értelemszerűen interfész),
+amely tartalmazza az alábbi műveleteket:
+
+    int  termekGyaranakPortja(String termek)
+    void termekFeldolgozastAtvesz(int gyarPort, String termek)
+    void naploTermekFeldolgozva(String termek, int mennyiseg)
+    void naploTermekAtszallitva(String termek, int mennyiseg, int honnanPort, int hovaPort)
+    void termekFoloslegEldobva(int gyarPort, String termek, int mennyiseg)
+    void vege()
+
+A gyárak termékeket állítanak elő, amelyek fajtáinak neveit
+a főprogram első parancssori paraméterében megadott nevű fájl tartalmazza soronként.
+A főprogram a gyárak elindítása után minden gyárral felveszi a kapcsolatot
+a megfelelő porton (12345, 12347 stb.), és elküldi
+a termékfajták számát, majd soronként a termékfajták neveit.
+Ezután a főprogram elküldi egy termékfajta nevét (minden gyárnak különbözőt);
+a gyár ezeket a termékeket dolgozza majd fel.
+
+
+Minden gyárban 100 egységnyi tárolókapacitás érhető el,
+de egy termékből legfeljebb 30 egységnyi tárolható.
+Minden gyár 1 és 3 másodperc közötti véletlenszerű időközönként
+10 egységnyi terméket állít elő, véletlenszerűen választva mind a 10 egységnyi termék fajtáját.
+Az előállított termékek sorban -- ha beférnek a fenti megszorításokkal --,
+bekerülnek a gyár raktárába, különben pedig elvesznek.
+
+Minden gyár (a termeléstől függetlenül) 1 és 3 másodperc közötti véletlenszerű időközönként
+feldolgoz 1, 2 vagy 3 terméket abból a fajtából, amelyet a gyár feldolgozni hivatott.
+(Ezt kezdetben a főprogram küldi át, a későbbiekről pedig lásd lejjebb.)
+Természetesen, ha a gyár ennél kisebb készlettel rendelkezik, akkor a teljes készletet feldolgozza.
+A feldolgozás ténye a rendszerben úgy jelenik meg,
+hogy egyrészt a feldolgozott mennyiség kikerül a raktárból,
+másrészt pedig a gyár felveszi az RMI kapcsolatot a központi objektummal,
+és bejelenti a feldolgozás tényét (naploTermekFeldolgozva művelet).
+
+Minden gyár (a termeléstől és fogyasztástól függetlenül) 1 és 5 másodperc közötti véletlenszerű időközönként ellenőrzi,
+hogy a raktárakban nincsen-e vészesen sok termék (több mint 25 termék, vagy összesen több mint 80 termék).
+
+    Az előbbi esetben a gyár utasítja a központot a termekFeldolgozastAtvesz művelet meghívásával,
+    hogy át kívánja venni a termék feldolgozó gyárának szerepét.
+    A központ ennek a hatására az átveendő termék gyárát utasítja ("feldolgoz" üzenet),
+    hogy az adott terméket dolgozza fel, illetve átállítja saját reprezentációját úgy,
+    hogy a termekGyaranakPortja művelet tükrözze a megváltozott feldolgozókat.
+    Ezután a termekFeldolgozastAtvesz művelet visszatér,
+    és a gyár átállíthatja a saját feldolgozását.
+
+    Az utóbbi esetben a gyár kiválasztja a legnagyobb készletű terméket,
+    és megpróbálja az alábbiak szerint átszállítani másik gyárba.
+    Először is felveszi az RMI kapcsolatot a központi objektummal,
+    és megkérdezi a termék jelenlegi feldolgozójának portját (termekGyaranakPortja művelet).
+    Ezután ezen a porton felveszi a kapcsolatot a feldolgozó gyárral,
+    és megtudakolja, mekkora szabad kapacitása van az adott termékből.
+    Ha van a másik gyárnak elegendő kapacitása,
+    akkor átad neki véletlen (0 és a készlet közötti) számú terméket,
+    illetve a központot értesíti a naploTermekAtszallitva művelettel.
+
+A főprogram második parancssori paramétere adja meg,
+hogy a rendszer hány másodpercig fusson.
+Ezután a főprogram hívja meg a központ vege műveletét,
+amely küldje el a vege üzenetet a gyáraknak (amelyek lépjenek ki ennek hatására),
+majd deregisztrálja a központ objektumot az RMI-ből.
+
+--------------------------------------------------------------------------------
+
+A gyárakhoz tartozó szerverek az alábbi formátumú üzeneteket képesek fogadni.
+(Feltételezhető, hogy ettől eltérő formátumú üzenetek nem érkeznek.)
+
+    A főprogram a gyár elindítása után ilyen üzenetet küld a portra.
+    Az üzenet vétele után a gyár megkezdi működését.
+
+            foprg-info
+            <termékfajták száma>
+            <a termékek nevei soronként (termékfajták száma darab sor)>
+            <indítás után feldolgozandó termékfajta>
+
+    Az alábbi módon lehet egy gyártól a raktárában levő készleteket lekérdezni.
+
+            keszletek
+
+       Erre a gyár az alábbi formátumban válaszol.
+       A termékek sorrendje tetszőleges, de csak azok jelennek meg,
+       amelyekből van legalább egy darab raktáron.
+
+            <termék neve> <mennyiség>
+            <termék neve> <mennyiség>
+            <termék neve> <mennyiség>
+            ...
+
+    Egy konkrét termékfajtából tárolt mennyiség lekérdezése.
+
+            keszlet
+            <termék neve>
+
+       A gyár válasza egyetlen szám.
+
+    Termék behozatala a raktárba.
+    Ha a kapacitáson felül kerülne a raktárba termék,
+    akkor a gyár eldobja a fölösleget, és erről értesíti a központot.
+
+            behoz
+            <termék neve>
+            <termék mennyisége>
+
+    Termék kivitele a raktárból.
+
+            kivisz
+            <termék neve>
+            <termék mennyisége>
+
+        A gyár válasza: a kivitt mennyiség.
+        Ha nagyobb mennyiséget próbálna kivinni a kliens, mint amennyit lehet,
+        akkor a raktár csak a készletig engedi.
+
+    A gyár feldolgozó szerepének átállítása.
+
+            feldolgoz
+            <termék neve>
+
+    A gyár leállítása.
+
+            leall
+

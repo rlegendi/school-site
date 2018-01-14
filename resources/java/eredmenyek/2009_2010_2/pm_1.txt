@@ -1,0 +1,19 @@
+1. csoport
+
+                    FizzBuzz     Collatz      Company      l33t      Sudoku    Editor    Puzzle    Sitcom1   Sitcom2   PortScanner   SocketClient   ClassHierarchy   StringMutable   MultiScanner   Crawler   Threading (orai)
+1  BERPAAI (+16):   +            +            +            +         +         +         +         +         +         +             +              +                +               +              +         +
+2  BEGPAAI ( +8):   +            +            +            +         -         +         +         +         +         +             +              +                -               -              -         +
+3  BIAOAAI (  0):   +            +            +            +         +         -         +         0         0         -             -              -                -               -              -         +
+4  BOTPAAI ( +2):   +            +            +            +         +         -         -         +         +         -             -              +                +               -              -         -
+5  CSZNAAI (  0):   +            +            +            +         +         +         -         +         +         0             -              +                -               -              -         -
+6  EIEOAAI (-12):   -            -            -            +         +         -         -         -         -         -             -              -                -               -              -         -
+7  HEAPABI ( +8):   +            +            +            +         +         +         -         +         +         +             +              -                -               -              +         +
+8  KAMPAAI (+12):   +            +            +            +         +         -         +         +         +         +             -              +                +               +              +         +
+9  KEINAAI (???):   (--> Zsolt)
+10 KOJPAAI ( +1):   +            +            -            +         +         -         -         +         +         +             -              +                +               +              -         0
+11 KUZOABI ( -9):   +            +            -            -         -         +         ?         -         -         -             -              -                -               -              -         -
+12 OKTPAAI ( +2):   +            +            +            -         -         +         +         +         +         +             -              -                -               -              -         +
+13 PIAPAAI ( +8):   +            +            +            +         +         -         +         +         +         +             +              -                -               +              -         +
+14 POVNAAI ( +3):   +            +            0            +         +         +         -         +         +         +             +              -                -               -              -         -
+15 RAGPAAI ( +9):   +            +            -            +         +         +         +         +         +         -             -              +                +               0              +         +
+16 SIAIABT ( +2):   +            +            -            +         +         -         +         +         +         +             -              -                -               +              -         -

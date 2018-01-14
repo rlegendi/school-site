@@ -1,0 +1,35 @@
+1. csoport
+
+Név                  ETR        FizzBuzz   Collatz   Euclid   Quadratic   Alapozas   OO   Abstraction   Szorgalmi   BEADANDO_1   ZH1   I/O   Collections   Generics   I/O gyak   Gyak   BEADANDO_2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Balogh Zoltán        BAZRAAI    +          +         -         -          --         -    -                         0            x     -     -             -          -          -      x
+Bónis Balázs         BOBRABI    +          +         -         -          --         +    ++                        +            3     -     +             +          +          +      +
+Boci Árpád Róbert    BOARABI    +          +         +         -          --         ++   -                         0            x     -     -             -          -          -      x
+Cseh Bálint          CSBRACI    +          +         +         +          --         +    -                         +            2     -     -             -          -          -      x
+Cseke Tímea          CSTRAAI    +          +         +         +          +++        +    +                         +            2     -     +             -          -          -      +
+Duleba Péter         DUPOAAI    +          +         +         +          +++        +    ++                        +            ?     -     -             -          -          -      +
+Enyedi Tamás         ENTRAAI    +          +         +         +          ++         ++   -                         +            2     -     +             +          +          +      +
+Istvánfi Zsolt       ISZRAAI    +          +         +         +          +++        ++   ++                        +            5     ++    +             +          +          +      +
+Kiss Ákos            KIARACI    +          +         +         +          +++        ++   -                         +            5     ++    +             +          +          +      +
+Kohn István          KOIPAAI    -          -         +         +          --         +    +             ++          +            5     -     +             +          +          -      +
+Lakatos Gábor        LAGMABT    +          +         +         -          --         +    ++                        +            4     ++    -             +          +          -      +
+Lavati Dávid         LADRAAI    +          +         +         +          +++        ++   ++                        +            5     ++    -             +          +          +      +
+Margli János         MAJRAAI    +          +         +         +          +++        ++   ++                        +            3     ++    -             +          -          -      ?
+Nemeskéri Örs        NEORAAI    +          +         +         -          --         -    -                         0            x     -     -             -          -          -      0
+Németh Dávid         NEDRAAI    +          -         +         -          --         -    -                         0            x     -     -             -          -          -      0
+Ocskó Szabina        OCSMAAT    +          +         -         -          ++         ++   -                         +            2     ++    +             -          -          +      +
+Somogyi Péter        SOPRAAI    +          +         +         +          +++        ++   ++                        +            5     ++    +             +          +          +      +
+Szabari Krisztián    SZKRAAI    +          +         +         +          +00        +    -                         +            3     -     +             -          +          -      +
+Szabó-Demény Balázs  SZBRACI    +          +         +         +          --         +    +                         +            2     -     +             -          -          +      ?
+Vári Csaba Géza      VACRAAI    +          +         +         +          ++         ++   ++                        +            4     ++    +             +          +          +      +
+Ziegenham András     ZIARAAI    +          -         +         +          ++         -    -                         0            x     -     -             -          -          -      x
+
+Peti Alice           PEAPAAI    +          +         -         -          --         -    -                         0            x     -     -             -          -          -      x
+Koroknai László Áron KOLOAAI    +          +         +         +          ++         ++   ++           ++           +            4     -     -             -          +          -      +
+
+
+Jelmagyarázat:
+--------------
+  0 - nem adott le beadandót
+  x - nem írt ZH-t
+  ? - még megbeszélés tárgya

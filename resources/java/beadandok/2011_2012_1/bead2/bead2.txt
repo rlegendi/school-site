@@ -1,0 +1,47 @@
+Implementáld az alábbi feladatot.
+Adott egy yml fájl, melynek felépítése a következõ:
+
+DB:
+   Táblanév1:
+       sor: 1
+           oszlopnév1: érték1
+           oszlopnév2: érték2
+           oszlopnév3: értké3
+       sor: 2
+           oszlopnév1: érték1
+           oszlopnév2: érték2
+           oszlopnév3: érték3
+       sor: 3
+           ...
+   Táblanév2:
+       sor: 1
+           oszlopnév1: érték1
+           oszlopnév2: érték2
+       sor: 2
+           ...
+
+Implementáld az alábbi osztályokat és interface-eket:
+   Valósíts meg két interface-t. Ezeket helyezd a bead.utils csomagba.
+       Az egyik a Selectable, mely a void select(int... i) metódust tartalmazza.
+           Paraméterlistájában azon oszlopok sorszáma, melyeket ki szeretnénk listázni.
+       A másik az Insertable, mely a void insert(String... s) metódust tartalmazza.
+           Paraméterlistájában azon értékek, melyek az adott oszlophoz tartoznak.
+   Egy record reprezentálásához valósítsd meg a Record osztályt, mely az adott táblának egy sorát egy List<String> típusú listában tárolja. (Ne felejtsd el tárolni az oszlopok számát.)
+       A record implementálja a Selectable és az Insertable interface-eket.
+       (Az egyszerûség kedvéért csak az adott oszlophoz tartozó értéket tároljuk el.)
+       A record továbbá tartalmaz egy getField(int i) : String metódust, mely visszatér az adott indexen lévõ értékkel.
+   Egy táblát a Table osztály valósít meg. Ez tartalmaz két osztályszintû láthatósági módosítóval ellátott mezõt.
+   Az egyik a tábla nevét tartalmazza (name), míg a másik a táblában lévõ rekordokat tartalmazza (records). Ez legyen egy List<Record> lista.
+   A táblának az alábbi metódusai vannak. 
+       Definiáld felül a toString metódusát, mely kiírja a tábla nevét és sorainak számát.
+       A tábla implementálja a Selectable interface-t, mely kilistázza a paraméterben megadott indexeken lévõ oszlopokat.
+       Ha nagyobb az adott szám, mint az adott rekord hossza, dobjál ColumnIndexOutOfBoundExceptiont (ezt származtasd az IndexOutOfBoundException kivételbõl).
+       A tábla implementálja az Insertable interface-t, mely beszúr egy új sort a táblába.
+       Ha több érték van a paraméterlistában, mint amilyen hosszú a record, dobjál TooManyArgumentsException-t. Ezt definiálnod kell.
+       A tábla tartalmaz továbbá egy getRow(int i) : Record metódust, mely visszatér a lista i-dik helyén szereplõ rekorddal.
+   A Record és a Table osztályokat helyezd el a bead.db csomagba.
+
+   A táblareprezentáción túl valósítsd meg a fálj beolvasásást és annak tartalmának feldolgozását.
+   Írj tesztprogramot, mely bemutatja a programod mûködését.
+   
+   [Third-party osztályok, libek használata tilos!]

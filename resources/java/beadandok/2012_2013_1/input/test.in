@@ -1,0 +1,4 @@
+3
+line - 50 50 200 200
+circle stroke:rgb(255,0,0);stroke-width:2 50 50 50 
+rect fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0) 200 200 300 100

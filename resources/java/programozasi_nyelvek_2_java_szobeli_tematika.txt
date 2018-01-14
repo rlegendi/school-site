@@ -1,0 +1,44 @@
+ 1. Deklarációk, utasítások, megjegyzések.
+
+ 2. Alaptípusok, literálok, operátorok, kifejezések. Kifejezések kiértékelése.
+
+ 3. Alprogramok, paraméterátadás.
+ 
+ 4. Osztályok, objektumok, példány- és osztályszintû tagok.
+    Láthatósági módosítószavak.
+
+ 5. Konstruktorok és inicializációs blokkok.
+
+ 6. Referenciák, példányosítás, memóriakezelés, szemétgyûjtés.
+
+ 7. Öröklõdés, polimorfizmus, statikus és dinamikus típus, statikus
+    típusellenõrzés, típuskonverziók, dinamikus típusellenõrzés.
+
+ 8. Túlterhelés (overloading), felüldefiniálás (redefining), elfedés (hiding).
+    Dinamikus kötés.
+
+ 9. Absztrakt osztályok, interfészek. Többszörös örökldés.
+  
+10. Egyenlõségvizsgálat, másolás, hasítókód, sztriggé alakítás
+
+11. Tömbök.
+ 
+12. Collections Framework.
+
+13. Csomagok: a package és import utasítások.
+  
+14. Fordítás/futtatás (több csomag esetén).
+    A virtuális gép mûködése (osztálybetöltõ, bájtkódellenõrzõ, JIT compiler).
+
+15. Kivételek fellépése, terjedése, lekezelése, kiváltása, definiálása,
+    terjedés specifikálása. Kivételfajták.
+
+16. Az assert utasítás használata. A finally szerepe az erõforráskezelésben.
+
+17. Beágyazott osztályok.
+
+18. Generikus és paraméterezett típusok. Altípusosság.
+
+19. Korlátozott polimorfizmus. Típushelyettesítõ.
+
+20. Generikus metódusok.

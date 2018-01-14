@@ -1,0 +1,153 @@
+<h1>Programozási nyelvek 2 GY. (Web-programozó)</h1>
+
+<p><strong>2012-2013-1, Beadandó feladat</strong></p>
+
+<ul>
+<li><strong>Kiírás időpontja:</strong> 2012. október 26.</li>
+<li><p><strong>Beadási határidő:</strong> 2011. november 8. (<em>a szünet utáni hét, ellenőrzés a gyakorlat alatt</em>)</p></li>
+<li><p><em>Amennyiben bármi kérdés merül fel a feladattal kapcsolatban, e-mailben keressetek a <a href="&#x6D;&#x61;&#105;&#x6C;t&#x6F;:&#x6C;&#x65;&#x72;&#x69;a&#x61;&#x74;&#64;&#x65;&#108;&#116;&#101;&#46;&#104;&#x75;">&#x6C;&#x65;&#x72;&#x69;a&#x61;&#x74;&#64;&#x65;&#108;&#116;&#101;&#46;&#104;&#x75;</a> címen!</em></p></li>
+</ul>
+
+<h2>A feladat leírása</h2>
+
+<p>Készítsünk egy egyszerű alkalmazást, beolvasott sorok alapján képes SVG képek előállítására!</p>
+
+<p><img src="svg.png" alt="SVG" title="" /></p>
+
+<p>Az <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a> (<em>Simple Vector Graphics</em>) egy népszerű vektorgrafikus képformátum, amelyet a különböző modern böngészők is előszeretettel támogatnak.</p>
+
+<p>Egy példa SVG fájl így néz ki, amelyet a programnak ki kell írnia a képernyőre:</p>
+
+<pre><code>&lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1"&gt;
+    &lt;circle cx="50" cy="50" r="50"/&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Az SVG formátumról részletesen a <a href="http://www.w3schools.com/svg/default.asp">W3C oldalán található tutorialban</a> találtok információkat.</p>
+
+<h2>Tecnhikai részletek</h2>
+
+<h3>Futtatás</h3>
+
+<p>A programot a következő egyetlen utasítással lehessen futtatni:</p>
+
+<pre><code>$ java svgcreator.Main test.input &gt;test.svg
+</code></pre>
+
+<p>Itt <code>svgcreator.Main</code> a futtatni kívánt osztály neve, ez tartalmazza a  <code>main()</code> metódust.</p>
+
+<p>A program egyetlen parancssori argumentumot használjon, amely egy input fájl neve legyen (<em>ennek mikéntjéről alább találtok bővebb információkat</em>), a <code>&gt;test.svg</code> pedig operációsrendszer szintű utasítás (Windowson, Linuxon, MacOS-en egyaránt működik), amely a program egész standard kimenetét (amit a <code>System.out</code> csatornára ír) átirányítja a megadott fájlba. Ezt a fájlt aztán egy megfelelő alkalmazással (pl. egy tetszőleges böngészővel) meg is lehet tekinteni.</p>
+
+<h3>Fájl beolvasása</h3>
+
+<p>Egy fájl beolvasásához a következő függvényt használjátok, amely visszaadja a megadott fájl sorait (kivéve az elsőt, az mondja meg, hány elemre kell számítani):</p>
+
+<pre><code>import java.io.*;
+
+...
+
+public static String[] readAllFileLines(final String fileName) {
+    try {
+        final BufferedReader br = new BufferedReader( new FileReader( fileName ) );
+        final int n = Integer.parseInt( br.readLine() );
+        final String[] ret = new String[n];
+
+        for (int i = 0; i &lt; n; ++i) {
+            ret[i] = br.readLine();
+        }
+
+        br.close();
+        return ret;
+    } catch (final IOException e) {
+        throw new RuntimeException( e );
+    }
+}
+</code></pre>
+
+<p><em>Nota bene Java 7 alatt az egész egyetlen sor lenne, azonban a Mac-es laborban sajnos ez nem áll rendelkezésre, így a bemutatás problémás volna.</em></p>
+
+<h3>Adatszerkezetek</h3>
+
+<p><em>Az adatszerkezeteket reprezentáló osztályok kerüljenek egy <code>svgcreator.data</code> csomagba.</em></p>
+
+<p>A programnak csak minimális SVG támogatást kell nyújtania, amely a következő objektumokat támogatja (minden értéket kezelj egyszerű <code>int</code> számként).</p>
+
+<p>Hozdd létre a következő osztályokat, amelyek az alábbi adattagokkal rendelkeznek.</p>
+
+<ul>
+<li><code>Circle</code>: adott az <code>x</code>, <code>y</code> koordinátája, valamint a sugara, <code>r</code></li>
+<li><code>Line</code>: adott a két végpontja, <code>x1</code>, <code>y1</code>, valamint <code>x2</code>, <code>y2</code> koordinátákkal</li>
+<li><code>Rect</code>: adott a bal felső sarkának <code>x</code>, <code>y</code> koordinátája, valamint a hossza (<code>width</code>), és magassága (<code>height</code>)</li>
+</ul>
+
+<p>Minden adatszerkezethez készíts konstruktorokat, amelyek beállítanak minden adattagot.</p>
+
+<p>Készíts továbbá egy <code>SvgElement</code> nevű ősosztályt, amelynek egyetlen adattagja van, egy <code>String style</code>. Minden adatszerkezet (a kör, téglalap és vonal is)
+származzon ebből az ostzályból. A stílus adattag egyszerű CSS definíciókkal megadja az alakzat kinézetét.</p>
+
+<p>Valósítsd meg a <code>toString()</code> metódusokat, amelyek segítségével minden adatszerkezet legyen képes megadni a saját SVG definícióját. Ennek a formátumára példák az alábbiak:</p>
+
+<pre><code>&lt;line x1="..." y1="..." x2="..." y2="..." style="..."/&gt;
+&lt;circle cx="..." cy="..." r="..." style="..."/&gt;
+&lt;rect x="..." y="..." width="..." height="..." style="..."/&gt;
+</code></pre>
+
+<p>ahol a pontok helyére az tárolt adattagok értékei kerüljenek.</p>
+
+<h3>Input formátum</h3>
+
+<p>A program bemenete soronként a következőkhöz hasonló definíciókat tartalmaz:</p>
+
+<pre><code>3
+line &lt;stilus&gt; 50 50 200 200
+circle &lt;stilus&gt; 50 50 50 
+rect &lt;stilus&gt; 200 200 300 100
+</code></pre>
+
+<p>Az input első sora mindig egy szám, amely megmondja, hány adat várható még. A program pontosan ennyi sort olvasson. A bemenet hibakezelésével nem kell foglalkoznod.</p>
+
+<p>Egy példafájl itt található: <a href="input/test.in">test.in</a></p>
+
+<h3>Az input feldolgozása</h3>
+
+<p>Minden sor beolvasásakor szedd szét azokat szavakra (pl. egy <code>split(" ")</code> utasítással, amely egy tömbben visszaadja a szóközökkel határolt területet).</p>
+
+<p>Ezután ha az első elem:</p>
+
+<ul>
+<li><code>"line"</code>, készíts egy <code>Line</code> objektumot a megadott paraméterekkel (ezek az input sorban rendben a stílus, mint string, valamint, az <code>x1</code>, <code>y1</code>, <code>x2</code> és <code>y2</code> koordináták)</li>
+<li><code>"circle"</code>, készíts egy <code>Circle</code> objektumot a megadott paraméterekkel  (ezek az input sorban rendben a stílus, mint string, valamint, a <code>cx</code>, <code>cy</code> koordináták és az <code>r</code> sugár)</li>
+<li><code>"rect"</code>, készíts egy <code>Rect</code> objektumot a megadott paraméterekkel (ezek az input sorban rendben a stílus, mint string, valamint, az <code>x</code>, <code>y</code> koordináták és a <code>width</code>, <code>height</code> értékek)</li>
+</ul>
+
+<p>Amennyiben a megadott stílus értéke <code>"-"</code>, akkor használd helyette a következő Stringet: <code>"fill:red;stroke:black;stroke-width:2"</code>.</p>
+
+<h3>A program kimenete</h3>
+
+<p>A program feldolgozás előtt írja ki a képernyőre az alábbi fejlécet (ez mindig így néz ki, minden SVG fájl esetében):</p>
+
+<pre><code>&lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1"&gt;
+</code></pre>
+
+<p>valamint az elemek feldolgozása után írja ki az alábbi láblécet:</p>
+
+<pre><code>&lt;/svg&gt;
+</code></pre>
+
+<h3>Tesztfájlok</h3>
+
+<p>Az alább néhány kisebb tesztfájlt találtok:</p>
+
+<ul>
+<li><a href="input/test.in">test.in</a></li>
+<li><a href="input/circles.in">circles.in</a></li>
+<li><a href="input/tree.in">tree.in</a></li>
+<li><a href="input/oost.in">oost.in</a></li>
+</ul>
+
+<h3>Elgondolkodnivalók</h3>
+
+<ul>
+<li>Jelenleg egyszerű az adatszerkezetek inicializálása, azonban gyakran 5-10 mélységű osztályhierarchiával dolgozunk.  Ilyen esetekben ökölszabály, hogy minden osztály kizárólag a saját adattagjait inicializálja, minden mást az őseire, leszármazottaira bíz. Meg tudod ezt valósítani egy-egy <code>super()</code> konstruktor hívással a konkrét adatszerkezetekben? </li>
+<li>Az adatszerkezetek gyakorlatilag ugyanolyan típusúak (<code>SvgElement</code>), át tudod-e írni úgy a programot, hogy a feldolgozás során egy tömbbe gyűjti az adatokat, és miután az összes elemet feldolgozta, egy külön függvény végzi a program outputjának előállítását? Így lényegesen áttekinthetőbb lesz a kód.</li>
+</ul>

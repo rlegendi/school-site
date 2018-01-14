@@ -1,0 +1,38 @@
+IP-bJAG/4, 4. csoport, Csütörtök 12:00-14:00
+
+Név                     ETR            1. gyak   2. gyak   3. gyak   4. gyak   5. gyak   6. gyak   7. gyak   I. Beadandó   I. ZH   10. gyak  11. gyak   12. gyak   II. Beadandó   +/-   Teszt    II. ZH   III. ZH   Pót teszt   Jegy
+====================================================================================================================================================================================================================================
+Bartha Dénes            BADRACI.ELTE   --        +++       +++       ++        ++        +++       ++        OK            5       ++        --         ++         OK             +15    11p/3   5        x         x           5
+Benczúr Norbert         BENPAAI.ELTE   +++       +++       +++       ++        ++        ++        ++++      OK            5       ++        ++         ++         OK             +25        M   M        x         x           5
+Berényi Csaba Tibor     BECPAAI.ELTE   ++        ++        ++        ++        ++        --        ++        OK            5       ++        ++         ++         OK             +16     5p/1   2        x         11p/3       3
+Bruder Viktor József    BRVPAAI.ELTE   ++        ++        --        ++        ++        0         --        OK            5       ++        --         ++         OK              +6     8p/2   4        x         x           4
+Ferencz József          FEJPABI.ELTE   ++        ++        ++        ++        0         +         --        OK            5       ++        ++         --         OK              +9     5p/1   3        x         3 (I)       3
+Horváth Péter           HOPMAAT.ELTE   ++        0         --        ++        --        +         ++        OK            4       0         --         --         OK               0     5p/1   2        x         2.5 (I)     3
+Jobbágy Zoltán          JOZNAAI.ELTE   ++        ++        0         ++        +         ++        +         OK            5       ++        +          ++         OK             +15    11p/3   2        x         x           4
+Kárász István Tamás     KAIPAAI.ELTE   ++        ++        +         ++        ++        --        ++        OK            4       0         ++         --         OK              +9    10p/3   2        x         x           3
+Kötél Gábor             KOGMABT.ELTE   --        --        --        ++        ++        ++        --        OK            5       ++        --         --         OK               0     8p/2   3        x         x           3
+Laczkó Tamás            LATNAAI.ELTE   --        0         --        --        --        +         ++        OK            4       ++++      ++         ++         OK              +3     7p/1   3        x         8p/2        3
+Márton József Dávid (*) MAJOAAI.ELTE   ++        ++        ++        ++        --        --        --        OK            5       --        --         --         OK             +20     8p/M   M        x         x           5
+Molnár Szilvia (*)      MOSPAAI.ELTE   ++        ++        ++        --        --        --        ++        OK            2       0         --         --         OK             +10    10p/3   x        2         x           2
+Oláh Gábor              OLGNAAI.ELTE   ++        --        --        +++       --        --        --         ~            ~       --        --         --          ~             -11        #   #        #         #           #
+Polyák Attila           POAPAAI.ELTE   ++        ++        ++        --        +         0         ++        OK            5       +         +          --         OK              +7     8p/2   2        x         x           3
+Romhányi András         ROAPAAI.ELTE   +++       ++        +++       ++        0         ++        +++       OK            5       --        ++         ++         OK             +17     9p/2   3        x         x           4
+Szabó Ádám              SZAOADI.ELTE   ++        ++        --        ++        ++        ++        ++        OK            5       ++        --         ++         OK             +12     7p/1   4        x         3.5 (I)     4
+Terdik Gergely          TEGNAAI.ELTE   +++       ++        ++        ++        --        +++       +++       OK            5       ++++      ++         ++         OK             +21    12p/4   5        x         x           5
+Varga Katalin           VAKOABT.ELTE   ++        --        ++        ++        ++        ++        ++        OK            5       ++        +          --         OK             +11     7p/1   4        x         13p/4       4
+Vass Alexandra          VAAPAAI.ELTE   ++        ++        ++        ++        ++        ++        --        OK            5       ++        --         --         OK              +8     9p/2   x        2         x           3
+Vaszlovics Dávid        VADOAAI.ELTE   ++        ++        --        ++        --        ++        ++        OK            4       --        ++         ++         OK              +8     8p/2   3        x         x           3
+Virág Anita             VIAPABI.ELTE   ++        ++        ++        --        0         ++        --        OK            4       0         --         --          H               0        x   x        x         x           #
+
+Jelmagyarázat:
+==============
+*   Fordítás (fordításonként 12x'+')
+~   Nem adott le beadandót
+X   Nem írt ZH-t (Következõ lehetõség: 2011.04.21)
+@   Megbeszélés alatt
+M   Megajánlott jegy az I. ZH érdemjegye alapján (utolsó elõadás)
+#   Nem adható gyakorlati jegy
+H   Haladékot kért (és emlékeztem is rá :-))
+Pt  Pót teszt szükséges
+Pzh Pót ZH szükséges
+I   Írásbeli vizsgát tett

@@ -1,0 +1,317 @@
+SZAKDOLGOZATI, DIPLOMAMUNKA, NAGYPROGRAM és TDK TÉMÁK
+az IKKK Szimulációs Központban és az AITIA INTERNATIONAL ZRT-nél
+
+kapcsolat: lgulyas@aitia.ai
+
+
+
+
+Populációs szimulációk
+
+	Nagyon sok szimuláció (az elméleti biológia, illetve a társadalomtudományok
+ 	területérõl) foglalkozik a populációk viselkedésével és interakcióival. 
+	A javasolt téma ezek alapjainak módszeres vizsgálata, különbözõ viselkedési
+	(születési-, halálozási-, stb.) szabályokkal, melyek kombinációjával a témakor
+	alapmodelljei elõállíthatóak. 
+
+Közlekedési szimulációk a TRAFFIX rendszerrel
+
+
+	A TRAFFIX egy könnyen kezelhetõ, bõvíthetõ ágens-alapú szimulációs platform
+	közlekedési szimulációk létrehozására. A TRAFFIX Javában készült, a Repast
+	szimulációs csomag felhasználásával. Kiváló alapot nyújt különbözõ közlekedési
+	helyzetek és vezetõi viselkedések realisztikus szimulációjára. Az alábbiakban
+	néhány konkrét, TRAFFIX-ban megvalósítandó feladatot sorolunk fel.
+
+
+	Braess Paradoxon 
+
+		A Braess paradoxon egy "régi", de igen érdekes megfigyelés, miszerint
+		bizonyos esetekben az újabb útvonalak hozzáadásával a közlekedési 
+		hálózat teljesítménye romlik. A feladat egy ezt demonstráló szimuláció
+		létrehozása TRAFFIX-ban.
+
+
+	Besorolás sávokba (legkésõbb, legelõbb)
+	Késõi vs azonnali sávváltás
+
+		Gyakori vita az autósok között, hogy mi a hatékonyabb, a "korai" vagy
+		a késõi, az "agresszív" vagy a "muja" sávváltás, illetve besorolás.
+		A feladat ennek módszeres vizsgálata TRAFFIX szimulációk segítségével.
+
+
+	Buszsáv
+
+		A feladat a TRAFFIX rendszer kiegészítése buszsávokkal, illetve az azokat
+		használó buszokkal, illetve az azokkal esetleg visszaélõ autósokkal.
+
+
+	Vizsgálatok "manhattan sávváltás" nélkül
+
+		A feladat a TRAFFIX rendszer vezetõinek kiegészítése egy újfajta útvonal-tervezõ
+		algoritmussal.
+
+
+	Hirtelen fékezés vs sûrûség (cf. spontán dugó) -- reprodukció
+
+		Egy ismert (és viszonylag részletesen vizsgált) jelenség az, hogy a közlekedési
+		dugók gyakran spontán módon, különösebb ok nélkül alakulnak ki. A feladat
+		ennek demonstrálása TRAFFIX szimulációval.
+
+
+	Parkoló autók
+
+		A feladat a TRAFFIX rendszer kiegészítlse parkoló autókkal, illetve az eddigieknél
+		összetettebb viselkedési szabályokkal (A-ból B-be megy, ott _parkol_ x ideig, aztán
+		B-bõl C-be megy, stb.)
+
+
+	Autókban ülõk számának állítása --> statisztika az átvitt emberek számára. (Cf. Busz.)
+
+		A feladat a TRAFFIX rendszer kiegészítése egy olyan modullal, mely figyelembe
+		képes venni az autóban ülõk számát is, és ez alapján képes statisztikákat készíteni.
+
+
+	Elõzés szembesávban
+
+		A feladat a TRAFFIX rendszer kiegészítése a szembesávban való elõzés lehetõségével.
+
+
+	Útdíj-számítások.
+
+		A világ egyre több városában vezetik be a forgalomtól függõ útdíjak rendszerét
+		a közlekedés sûrûségének szabályozására. Egyre gyakrabban javasolják ezt Budapesten is.
+		A feladat a TRAFFIX rendszer kiegészítése egy olyan modullal, mely ennek szimulálását
+		és vizsgálatát is lehetõvé teszi.
+
+
+	Sebesség-szórások vizsgálata
+
+		Az alap TRAFFIX modellek vizsgálatának megismétlése, a sebességek, illetve a követési
+		távolságok szórásának, valamint az utóbbiak sebesség-függõségének módszeres vizsgálata
+		céljából.
+
+
+	Gyorsulás/lassulás sebességének állíthatósága
+
+		A feladat annak demonstrálása, hogy a TRAFFIX rendszer képes a gyorsulás és a lassulás
+		sebességének rugalmas állítására, illetve realisztikus kezelésére. Ezek segítségével
+		különbözõ "forgatókönyvek" kidolgozása (téli út, esõs út, stb.).
+ 
+
+
+	Indulás jelzõlámpánál
+
+		Az autósok között sok konfliktus forrása a jelzõlámpa zöld jelzésére adandó
+		"válasz" milyensége. A feladat annak módszeres vizsgálata, milyen hatásokkal jár
+		-- a közlekedõk egészére nézve --, ha teljes gázzal, lassan, stabil gyorsulással, stb.
+		indulnak az autók a jelzõlámpánál.
+
+
+
+A gazdasági-pénzügyi rendszer replikatív jellegének modellezése
+
+	Akinek pénze van, bankba teszi, vagy befekteti. A befektetések újabb pénzt fialnak (vagy nem), de 
+	mindenképp munkahelyeket generálnak, amitõl valakinek bevétele keletkezik. A bevétel egy részét 
+	megélhetésre költjük (ismét bevétel valakinek), míg más része megmarad és minden kezdõdik elölrõl.
+	A bankba tett pénzünk hitel formájában másokhoz kerül: vagy befektetés lesz belõle, vagy elköltik
+	(fogyasztási hitel), tehát máshoz kerül bevételként, és így tovább.
+
+	A gazdasági rendszer alapja ez a replikáció: a "pénz", az érték körforgása és ciklikus replikációja.
+	A feladat ennek szemléltetésére egy egyszerû ágens-alapú szimuláció készítése.
+
+
+BeerGame in PET (Repast, FAB)
+
+	A BeerGame (ld. google) egy egyszerû, többszereplõs modell a beszállítói hálózatok (supply chain)
+	modellezésére. A feladat ennek elkészítése FABLES-ben (http://fables.aitia.ai/), illetve PET-ben
+	(http://pet.aitia.ai/).
+
+
+Társadalmi hálózatmodellek mikrostruktúrával
+    
+	A jelenleg ismert hálózati modellek általában globálisak és a globális 
+	statisztikai tulajdonságok reprodukciójára törekszenek. Ugyanakkor a hálózat néhány 
+	alaptulajdonsága a hétköznapi, "józan" ész alapján ismert. Ilyen "mikrostruktúra" pl. 
+	az, hogy családban élünk, munkahelyre (iskolába) járunk, satöbbi. A jelen feladat egy olyan 
+	hálózat-generátor program és modell elõállítása, amely létezõ empirikus adatok alapján (pl. 
+	családok méretének eloszlása, azaz, hány egyedülálló, hány pár, hány x gyermekes család, 
+	stb. van, illetve a munkahelyi és egyéb tevékenységekre vonatkozó hasonlóak), meghatározott 
+	globális paraméterekkel (átlagtávolság, klaszterezettség, fokszám-eloszlás, stb.) rendelkezõ 
+	hálózatokat "gyárt".
+
+
+Intuitív felhasználói felület (GUI és menü-rendszer) Pajekhez (hálózatelemzõ program)
+
+    - Pajek frontend
+    - bõvíthetõ, rugalmas, kombinálható
+
+
+Oktatási modellek hálózatos témákban
+    - Generatorok
+    - Alap statisztikák
+    - Export-lehetõségek
+    - Vizualizációk
+
+
+Intuitív felhasználói felület (GUI és menü-rendszer) 
+hálózatelemzõ R programok (scriptek) végrehajtásához
+
+    - MEME-szerû (http://meme.aitia.ai/) R frontend, bõvíthetõ
+    - rugalmas R, "programozás nélkül"
+
+
+A MASS szimulációs platform kiegészítése 3D vizualizációs lehetõségekkel
+
+	A MASS szimulációs platform (http://mass.aitia.ai/) kiterjedt vizualizációs,
+	grafikonozási lehetõségekkel rendeklezik, könnyen használható formában.
+	A feladat ennek kiegészítése néhány háromdimenziós megjelenítési lehetõséggel, pl.:
+
+		- 2D rács, melynek minden pontján egy színes oszlop van
+		- 3D felület
+		- 3D felület, melyen ágensek vannak (az ágensek gömbök, vagy egyszerû
+		  figurák jelölik)
+
+
+A MASS szimulációs platform kiegészítése újabb grafikonokkal
+
+	A MASS szimulációs platform (http://mass.aitia.ai/) kiterjedt vizualizációs,
+	grafikonozási lehetõségekkel rendeklezik, könnyen használható formában.
+	A feladat ennek kiegészítése néhány új grafikonnal, úgymint:
+	
+		- Hexagonális rács
+		- Voronoi diagrammok
+		- Quiver plot
+
+
+A MASS szimulációs platform vizualizációs rendszerének "offline" változata
+
+	A MASS szimulációs platform (http://mass.aitia.ai/) kiterjedt vizualizációs,
+	grafikonozási lehetõségekkel rendeklezik, könnyen használható formában.
+	Ez a gyakorlatban azt jelenti, hogy a szimuláció által generált adatokat a
+	rendszer azonnal, "online" megjeleníti a grafikonokon. Ugyanakkor maga a 
+	vizualizációs komponens eléggé jól-tervezett ahhoz, hogy az adatforrások
+	könnyen leválaszthatóak legyenek.
+
+	A jelen feladat az, hogy a vizualizációknak elkészítsük egy olyan változatát,
+	amelyben a szimuláció -- a sebesség érdekében -- az adatokat fájlba menti,
+	s a vizualizációs rendszer késõbb azokat a fájlból megjeleníti. 
+
+	Azaz, a jelenlegi vizualizációs rendszer egyfajta "szétválasztásáról" van szó:
+	egyrészt képesnek kell lenni megjelenítés helyett fájlba menteni az adatokat,
+	másrészt pedig speciális adatforrásokat kell készíteni, amelyek fájlból olvassák
+	az információkat.
+
+
+
+A MASS szimulációs platform kísérlet-vezérlõjének kiegészítése
+haladó kísérletterv (DoE) pluginokkal
+
+	A MASS szimulációs platform (http://mass.aitia.ai/) egyik legizgalmasabb
+	komponense az ún. kísérlet-vezérlõ modul (Model Execution Module, MEME --
+	http://meme.aitia.ai/). Ennek egyik fõ szolgáltatása, hogy haladó, "intelligens"
+	módszerekkel (kísérlet-tervekkel, design of experiments, DoE) támogatja, hogy
+	a kutató a szimuláció viselkedését hatékonyan (kevés futtatással) feltárja a
+	praktikusan végtelen paramétertérben. A MEME egy jól tervezett plugin-architektúrával
+	rendelkezik, amelybe az újabb kísérleti módszerek könnyen beilleszthetõek.
+	A jelen feladat egy-két újabb, haladó, "intelligens" kísérleti terv pluginjának elkészítése.
+
+	
+
+A FABLES szimulációs nyelv fejlesztõi környezetének kiegészítése 
+a hibajelzések felhasználóbarátabbá tételére
+
+	A FABLES szimulációs nyelv (http://fables.aitia.ai/) fejlesztõi környezete az
+	Eclipse platformra épül. Jelenleg ennek a platformnak számtalan lehetõségét 
+	nagyszerûen kihasználja. Azonban a hibajelzések ügyében jelenleg nem épít
+	az Eclipse ezirányú szolgáltatásaira. A feladat ennek megvalósítása.
+
+
+Mini-debugger a FABLES szimulációs nyelvhez
+
+	A FABLES szimulációs nyelv (http://fables.aitia.ai/) egy könnyen használható,
+	félig-funkcionális ágens-alapú nyelv szimulációk írásához. Az ágenseket
+	"objektum-osztályok" írják le, a viselkedésüket deklaratív függvényekkel írjuk
+	le, míg a szimulációk idõbeli viselkedését (dinamikáját) ún. ütemezõk (scheduler-ek)
+	vezérlik, amik megadják, hogy egy adott idõpillanatban milyen viselkedést/függvényt
+	kell végrehajtani.
+
+	A jelen feladat egy egyszerû debugger készítése FABLES-hez. Ennek lényege az
+	ütemezõ aktuális tartalmának és állapotának megjelenítése, illetve ennek lépésenkénti
+	végrehajtása. Esetleg a feladat hasznos része lehet, 1 kifejezés dinamikus kiértékelése
+	(lekérdezés + értékadás).
+
+
+A MASON szimulációs rendszerre fordító FABLES compiler elkészítése
+
+
+	A FABLES szimulációs nyelv (http://fables.aitia.ai/) egy könnyen használható,
+	félig-funkcionális ágens-alapú nyelv szimulációk írásához. Az ágenseket
+	"objektum-osztályok" írják le, a viselkedésüket deklaratív függvényekkel írjuk
+	le, míg a szimulációk idõbeli viselkedését (dinamikáját) ún. ütemezõk (scheduler-ek)
+	vezérlik, amik megadják, hogy egy adott idõpillanatban milyen viselkedést/függvényt
+	kell végrehajtani.
+
+	Jelenleg a FABLES fordítója a Java alapú Repast J (http://repast.sourceforge.net/) 
+	szimulációs platformra generál kódot. A feladat egy kódgenerátor modul készítése, melynek
+	segítségével a FABLES képes a MASON szimulációs platformra 
+	(http://cs.gmu.edu/~eclab/projects/mason/) is kódot generálni.
+
+
+
+A Repast Simphony szimulációs rendszerre fordító FABLES compiler elkészítése
+
+
+	A FABLES szimulációs nyelv (http://fables.aitia.ai/) egy könnyen használható,
+	félig-funkcionális ágens-alapú nyelv szimulációk írásához. Az ágenseket
+	"objektum-osztályok" írják le, a viselkedésüket deklaratív függvényekkel írjuk
+	le, míg a szimulációk idõbeli viselkedését (dinamikáját) ún. ütemezõk (scheduler-ek)
+	vezérlik, amik megadják, hogy egy adott idõpillanatban milyen viselkedést/függvényt
+	kell végrehajtani.
+
+	Jelenleg a FABLES fordítója a Java alapú Repast J (http://repast.sourceforge.net/) 
+	szimulációs platformra generál kódot. A feladat egy kódgenerátor modul készítése, melynek
+	segítségével a FABLES képes a Repast Simphony szimulációs platformra 
+	(http://repast.sourceforge.net/) is kódot generálni.
+
+
+C# kódot generáló FABLES compiler elkészítése
+
+
+	A FABLES szimulációs nyelv (http://fables.aitia.ai/) egy könnyen használható,
+	félig-funkcionális ágens-alapú nyelv szimulációk írásához. Az ágenseket
+	"objektum-osztályok" írják le, a viselkedésüket deklaratív függvényekkel írjuk
+	le, míg a szimulációk idõbeli viselkedését (dinamikáját) ún. ütemezõk (scheduler-ek)
+	vezérlik, amik megadják, hogy egy adott idõpillanatban milyen viselkedést/függvényt
+	kell végrehajtani.
+
+	Jelenleg a FABLES fordítója a Java alapú Repast J (http://repast.sourceforge.net/) 
+	szimulációs platformra generál kódot. A feladat egy kódgenerátor modul készítése, melynek
+	segítségével a FABLES képes C# kódot is generálni.
+
+
+A MASS szimulációs platform kísérlet-vezérlõjének kiegészítése
+NetLogo modellek kezeléséhez
+
+	A MASS szimulációs platform (http://mass.aitia.ai/) egyik legizgalmasabb
+	komponense az ún. kísérlet-vezérlõ modul (Model Execution Module, MEME --
+	http://meme.aitia.ai/). Ez jelenleg Repast J szimulációs (http://repast.sourceforge.net/)
+	platformon futó szimulációk kezelésére képes. Ugyanakkor a MEME architektúrája lehetõvé
+	teszi újabb szimulációs platformok kezelését támogató pluginok rendszerbe illesztését.
+	A jelen feladat egy olyan plugin készítése, melynek segítségével a MEME képes lesz
+	NetLogo (http://ccl.northwestern.edu/netlogo) szimulációk kezelésére is.
+
+
+A MASS szimulációs platform kísérlet-vezérlõjének kiegészítése
+MASON modellek kezeléséhez
+
+	A MASS szimulációs platform (http://mass.aitia.ai/) egyik legizgalmasabb
+	komponense az ún. kísérlet-vezérlõ modul (Model Execution Module, MEME --
+	http://meme.aitia.ai/). Ez jelenleg Repast J szimulációs (http://repast.sourceforge.net/)
+	platformon futó szimulációk kezelésére képes. Ugyanakkor a MEME architektúrája lehetõvé
+	teszi újabb szimulációs platformok kezelését támogató pluginok rendszerbe illesztését.
+	A jelen feladat egy olyan plugin készítése, melynek segítségével a MEME képes lesz
+	MASON (http://cs.gmu.edu/~eclab/projects/mason/) szimulációk kezelésére is.
+
+
+

@@ -1,0 +1,24 @@
+5. csoport
+
+                    FizzBuzz      Collatz       Company      l33t      Sudoku    Editor    Puzzle   Sitcom1   Sitcom2   PortScanner   SocketClient   ClassHierarchy   StringMutable   MultiScanner   Crawler   Threading (orai)
+1  BAPPAAI ( +4):   +             +             +            +         +         +         +        +         +         -             -              -                -               -              -         +
+2  DADOAAI (  0):   +             +             -            +         +         -         -        +         +         +             -              -                -               +              -         + [egyeztetes alapjan javitott 0-ra]
+3  FRKPAAI (  0):   +             +             +            +         +         +         +        -         -         -             -              -                -               -              -         +
+4  GYPPAAI (+16):   +             +             +            +         +         +         +        +         +         +             +              +                +               +              +         +
+5  HAJPAAI ( +8):   +             +             +            +         +         -         -        +         +         +             -              +                +               +              -         +
+6  JUAPAAI ( -2):   +             +             -            +         +         -         -        +         +         -             -              -                -               -              -         +
+7  KAPPAAI ( +8):   +             +             -            +         +         +         +        +         +         +             -              +                -               +              -         +
+8  KAIPAAI ( -2):   +             +             -            +         +         +         -        +         +         -             -              -                -               -              -         -
+9  KATPAAI (+14):   +             +             +            +         +         +         +        +         +         +             +              +                +               +              +         -
+10 KOAOADI ( +6):   +             +             -            +         +         +         +        +         +         +             -              -                -               +              -         +
+11 MABPAAI (+12):   +             +             +            +         +         +         +        +         +         +             -              +                +               -              +         +
+12 MAGPABI (  0):   +             +             -            +         +         +         +        +         +         -             -              -                -               -              -         -
+13 MEZOABI (+10):   +             +             +            +         -         +         +        +         +         +             +              +                +               +              -         -
+14 NEGOAAI (+14):   +             +             +            +         +         +         +        +         +         +             +              +                +               +              -         +
+15 PAPPAAI (+14):   +             +             +            +         +         +         +        +         +         +             +              +                +               +              -         +
+16 PIJNAAI ( +8):   +             +             -            +         +         +         +        +         +         +             -              +                -               +              -         +
+17 SAAPAAI ( +4):   +             +             +            +         +         +         -        +         +         +             -              -                -               -              -         +
+18 SIAPAAI ( +4):   +             +             +            +         +         +         +        -         -         -             -              +                +               -              -         +
+19 SVZIAAT ( +3):   +             +             +            +         -         +         -        +         +         0             -              -                -               +              -         +
+20 SZBNAAT (+10):   +             +             +            +         +         +         +        +         +         +             +              -                -               +              -         +
+21 CZCMAAT ( +8):   +             +             +            +         +         +         +        +         +         -             -              +                +               -              -         +

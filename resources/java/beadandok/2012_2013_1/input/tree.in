@@ -1,0 +1,5 @@
+4
+rect fill:green;fill-opacity:1;stroke:#d45500;stroke-opacity:1 0 300 300 100
+circle fill:green;fill-opacity:1;stroke:#d45500;stroke-opacity:1 175 100 100
+rect fill:#552200;fill-opacity:1;stroke:#d45500;stroke-opacity:1 150 100 50 250
+circle fill:white;fill-opacity:1;stroke:#d45500;stroke-opacity:1 180 200 10

@@ -1,0 +1,124 @@
+<h1>Üzenõfal</h1>
+
+<p>Készíts üzenõfalt, melyen a különbözõ szálak üzenetet hagyhatnak egymásnak,
+elolvashatják bármelyik üzenetet, és akár törölhetik is azt. A megoldásod be
+kell mutatnod egy gyakorlatvezetõnek, aki majd leosztályozza. Az osztályozás
+során az implementáció minõségét osztályozzák.</p>
+
+<p>Az alap feladatot megoldhatod RMI-vel és Socket-ek segítségével egyaránt. A
+hármasért a feladat kötött, de a négyesért már választhatsz, melyik
+részfeladatot oldod meg. Az ötösért elég 2 plusfeladat, nem kell mind a 3.</p>
+
+<h2>Segédanyagok:</h2>
+
+<p><a href="http://pnyf.inf.elte.hu/ebr/public/java/">Java Language Reference</a></p>
+
+<p><a href="http://pnyf.inf.elte.hu/balu/eclipse-java-indigo-SR2-win32.zip">Eclipse 32 bit</a></p>
+
+<p><a href="http://pnyf.inf.elte.hu/balu/eclipse-java-indigo-SR2-win32-x86_64.zip">Eclipse 64 bit</a></p>
+
+<hr />
+
+<h2>Az alapfeladat:</h2>
+
+<p>Készítsd el az Üzenõfalat (BlackBoard), és készíts hozzá random üzeneteket
+(Message) gyártó klienseket is. Minden üzenet egy <strong>(int, String)</strong> pár, amit
+az int az üzenõfalon egyértelmûen meghatároz (ID). A BlackBoard mûveletei:</p>
+
+<h3>RMI-vel:</h3>
+
+<ul>
+<li>Message read(int) 
+<ul>
+<li>a paraméterül kapott id-jú Message-et adja vissza </li>
+<li>ha nincs ilyen Message, akkor null-t ad vissza </li>
+</ul></li>
+<li>Message take(int) 
+<ul>
+<li>a paraméterül kapott id-jú Message-et adja vissza </li>
+<li>a visszatérés elõtt a Message-et eltávolítja az üzenõfalról </li>
+<li>ha nincs ilyen Message, akkor null-t ad vissza </li>
+</ul></li>
+<li>boolean write(Message) 
+<ul>
+<li>a paraméterül kapott Message-et a BlackBoard-ra írja </li>
+<li>ha már létezik ilyen ID-jú Message, akkor a visszatérési értéke false </li>
+</ul></li>
+</ul>
+
+<h3>Sockettel:</h3>
+
+<ul>
+<li>read <ID>
+<ul>
+<li>a read utáni id-jú Message szövegét kéri vissza </li>
+<li>ha nincs ilyen Message, akkor üres sort kap vissza </li>
+</ul></li>
+<li>take <ID>
+<ul>
+<li>a take id-jú Message szövegét kéri vissza </li>
+<li>a visszatérés elõtt a Message-et eltávolítja az üzenõfalról </li>
+<li>ha nincs ilyen Message, akkor üres sort küld vissza </li>
+</ul></li>
+<li>write <ID> <String>
+<ul>
+<li>a write után kapott ID-val és Stringgel Message-et ír a BlackBoard-ra </li>
+<li>ha már létezik ilyen ID-jú Message, akkor "fail" üzenetet küld vissza, amúgy "OK"-t. </li>
+</ul></li>
+</ul>
+
+<p><strong>Minden esetben figyelj a párhuzamos problémák kiküszöbölésére!</strong></p>
+
+<hr />
+
+<h2>A hármasért:</h2>
+
+<p>Ha az elõzõ feladatot RMI-vel oldottad meg, ezt Sockettel kell, és fordítva.</p>
+
+<p>Készíts egy aktív logoló alkalmazást, mely csatlakozik a BlackBoard-hoz, és
+meghatározott idõközönként lekéri annak teljes tartalmát. A szükséges Socketes
+/ RMI-s felülettel egészítsd ki a Black Board-ot. Egy BalckBoard-hoz akárhány
+Logger csatlakozhat.</p>
+
+<p>A Logger parancssori paraméterként várja, hogy hány másodpercenként kérjen le
+az összes üzenetet. Ha csak egy paramétert kap, akkor a standard outputra
+logol, ha kettõt, akkor a második paraméterül kapott file-ba. A Logger
+folyamtosan várja a felhasználó parancsait, melyek a következõk lehetnek.</p>
+
+<ul>
+<li>force -- hatására zonnal lekéri a üzeneteket </li>
+<li>exit -- hatására kilép </li>
+</ul>
+
+<hr />
+
+<h2>+1</h2>
+
+<p>Oldd meg, hogy ha nem létezik a Message, amit a read vagy a take mûvelet
+igényelt, akkor a kliens várjon addig, míg az üzenet fel nem kerül a
+BlackBoard-ra.</p>
+
+<hr />
+
+<h2>+1</h2>
+
+<p>Készíts Mirror-t a BlackBoard-hoz. A Mirror a következõ kritériumoknak kell,
+hogy megfeleljen:</p>
+
+<ul>
+<li>Egy BlackBoard-hoz akárhány Mirror csatlakozhat. </li>
+<li>A Mirror magától csatlakozik a BlackBoard-hoz. </li>
+<li>A Mirror kezdeti állapotát a BlackBoard állítja be </li>
+<li>A Mirror-t mindig a BlackBoard tartja karban. </li>
+</ul>
+
+<hr />
+
+<h2>+1</h2>
+
+<p>A BlackBoard fogadja a felhasználó üzeneteit:</p>
+
+<ul>
+<li>shutdown -- lezárja az összes kapcsoaltot, nem fogad el újat, az aktuális állapotott egy fájlba menti, ha a file létezik indításkor, akkor onnan tölti be a kezdeti állapotot. </li>
+<li>reset -- minden kapcsolatot lezár, és az összes üzenetet eldobja </li>
+</ul>

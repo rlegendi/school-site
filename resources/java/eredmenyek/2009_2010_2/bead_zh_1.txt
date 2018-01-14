@@ -1,0 +1,30 @@
+1. csoport
+
+              Bead 1 + 2          ZH1          Jegy   Bead 3 + 4        ZH2         Jegy   Elmelet   PE     +/-   Gyakjegy   Megjegyzes
+                             1.  2.  3.  4.                        1.  2.  3.  4.
+
+1  +BERPAAI:   5             +   +   +   +     5      5            +   +   +   -    4      3 (17)           +16   5
+2  +BEGPAAI:   5             +   +   +   -     4      5            +   +   +   -    4      3 (15)            +8   4
+3  +BIAOAAI:   5             +   -   -   -     2      4            +   -   -   -    2      1 (11)    4 (18)       3          PE
+4  +BOTPAAI:   4             +   0   +   +     4      5            +   +   +   -    4      2 (12)            +2   4
+5   CSZNAAI:   5             +   +   +   +     5      5            +   +   +   -    4      2 (13)             0   4
+6   EIEOAAI:   -------------------------------------------------------------------------------------------------------------
+7  +HEAPABI:   5             +   0   +   +     4      5            +   +   +   -    4      1 (11)    2 (12)  +8   4          PE, Tul eros a szinkronizacios feltetel
+8  +KAMPAAI:   5             +   +   +   +     5      5            +   +   +   0    4      3 (17)           +12   5
+9   KEINAAI:   (--> Zsolt)   +   +   +   -     4      
+10  KOJPAAI:   5             +   +   -   -     3      5            +   +   +   -    4      2 (14)            +1   4          Thread.join()
+11  KUZOABI:   -------------------------------------------------------------------------------------------------------------
+12 +OKTPAAI:   5             +   +   +   -     4      5            +   +   -   -    3      2 (13)            +2   4
+13 +PIAPAAI:   5             +   +   -   -     3      5            +   +   -   -    3      3 (16)            +8   4
+14 +POVNAAI:   5             -   -   +   +     3      5            +   -   +   -    3      4 (19)            +3   4
+15 +RAGPAAI:   5             +   +   +   +     5      5            +   +   +   -    4      4 (20)            +9   5
+16 +SIAIABT:   5             +   -   +   -     3      5            +   +   -   -    3      2 (13)            +2   4
+
+Jelmagyarazat:
+--------------
+-	Nem adta be
+0	Beadta, kerdeses
++	Beadta, elfogadtam
+*	Megbeszeles targya
+PE	Pot elmeleti resz kell
+PZH	Pot ZH kell

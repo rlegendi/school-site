@@ -1,0 +1,78 @@
+<h1>2010-2011-2, 1. Beadandó feladat</h1>
+
+<ul>
+<li><strong>Beadási határidõ:</strong> 2011. április 1. (<em>ZH-t megelõzõ hét, péntek</em>), 23:00</li>
+<li>A beadandó feladat <em>megfelelt minõsítést</em> kap, amennyiben a mellékelt
+tesztfájl mellett hiba nélkül fordul, fut. <em>A tesztfájlon semmilyen módosítás nem végezhetõ!</em>
+A tesztfájl az alábbi linken elérhetõ: <a href="MediaTest.java">MediaTest.java</a></li>
+<li><p>A beadandókat a gyakorlatvezetõnek küldjétek el e-mailben, egyetlen ZIP
+fájlként mellékelve. A levél fejléce a következõképp nézzen ki:</p>
+
+<pre><code>csop&lt;csoportszám&gt;_&lt;EHA kód&gt;_bead1
+</code></pre>
+
+<p>Példa:</p>
+
+<pre><code>csop4_LERIAAT_bead1
+</code></pre></li>
+</ul>
+
+<h2>A feladat leírása</h2>
+
+<p>Készíts egy média értékelõ programozói könyvtárat! A program <em>3 különbözõ médiát</em>
+tudjon kezelni: <strong>könyvet</strong>, <strong>újságot</strong>, valamint <strong>DVD</strong>-t. A médiáknak általánosan
+van <em>címe</em> és <em>példányszáma</em>, valamint könyvnek <em>szerzõje</em>, újságnak
+<em>szerkesztõje</em>, DVD-nek pedig <em>rendezõje</em>.</p>
+
+<p>Készíts egy általános <strong>értékelés</strong> osztályt! Ezt a programban médiákra
+specializálva lehessen használni. Egy értékeléshez tartozik egy
+<em>egyedi azonosító</em> (<code>long</code>), egy <em>tetszõleges média</em>, valamint egy <em>1-5 között lévõ pontszám</em>.
+A program ilyen értékelések kezelésére nyújtson egy interfészt, az alábbi
+funkcionalitásokkal:</p>
+
+<ol>
+<li>Értékelések listázása</li>
+<li>Új értékelés felvétele</li>
+<li>Meglévõ értékelés módosítása</li>
+<li>Meglévõ értékelés törlése</li>
+<li>Legjobb értékelés megkeresése</li>
+<li>Legrosszabb értékelés megkeresése</li>
+</ol>
+
+<p>Az értékelések tárolását <em>tetszõleges adatszerkezettel</em> megoldhatod.</p>
+
+<p><em>Értékelések listázásánál</em> vissza kell adni egy listát, amely tartalmazza az
+eddig rögzített, esetlegesen módosított, nem törölt elemek listáját. A sorrend
+tetszõleges. Kell egy külön függvény is, amely a nyilvántartott értékelések
+számát adja meg. </p>
+
+<p><em>Új értékelés felvételénél</em> be kell kérni a média típusától függõ adatokat, majd
+felvenni egy új értékelést.</p>
+
+<p><em>Meglévõ értékelés módosításánál</em> az értékelés egyedi azonosítójának
+függvényében meg kell tudni változtatni az értékelés pontszámát. A paraméterrõl
+ellenõrzendõ, hogy a megszabott intervallumban van-e.</p>
+
+<p><em>Meglévõ értékelés törlésénél</em> az értékelés egyedi azonosítójának függvényében
+törölni kell az adott értékelést a nyilvántartott listából.</p>
+
+<p><em>A legjobb (legrosszabb)</em> értékelés megkeresése esetén a program keresse és adja
+meg a legjobb (legrosszabb) értékelést, ami jelenleg az adatbázisban található.</p>
+
+<h2>Technikai részletek</h2>
+
+<ul>
+<li>Az értékelések osztályának <code>equals()</code> függvénye az egyedi ID alapján
+hasonlítsa össze az objektumokat.</li>
+<li>Az alkalmazás implementálja a tesztfájlban található <code>IMediaManager</code> interfészt!</li>
+<li>A média osztályok közös õse legyen az <code>AMedia</code> absztrakt osztály.</li>
+<li>A használandó konstruktorok szignatúrája a paraméterek nevével:
+<ul>
+<li><code>Newspaper(String title, int copies, String editor)</code></li>
+<li><code>Book(String title, int copies, String author)</code></li>
+<li><code>DVD(String title, int copies, String director)</code> </li>
+<li><code>Rating(long id, AMedia media, int score)</code></li>
+</ul></li>
+<li>A <code>toString()</code> függvény felüldefiniálása nem kötelezõ sehol, ám a hibaüzenetek
+úgy lesznek konstruktívak, ha ezek megvannak.</li>
+</ul>

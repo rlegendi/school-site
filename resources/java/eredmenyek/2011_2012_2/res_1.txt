@@ -1,0 +1,27 @@
+IP-bJAG/1, Java alkalmazások GY., Hétfő 14:00-16:00, 2.63 (PC8)
+
+Név                     EHA     1 234 5 6 7 8 9 A Zh1 B1 B2 Sum Zh2 Elm Final
+=============================================================================
+Fazekas-Vígh Tamás      FATSAAI ++++++++--++00++00 2  / /   +10   4   3     4
+Garas Péter             GAPGAAT ++++++++--++00++00 5  / /   +10   5   4     5
+Hudoba Péter            HUPQAAI --++++--++++--++00 5  / /    +4   5   4     5
+Ianko Zoltán            IAZRAAI --++++++++++00++-- 5  / ?    +8   5   3     5
+Nádai Endre Levente     NAESAAI ++++++++++++00++00 5  / /   +14   5   3     5
+Nagy Tamás              NATSAAI --++++++++++00+-00 5  / /    +8   4   3     4
+Páll Gábor              PAGNABI ++++----++--00--++ 4  / /     0   2   4     3
+Pátkai Péter            PAPIABT ++++++--++--00++00 2  / /    +6   2   3     2
+Rónai Péter             ROPSAAI --++++++++++00+-00 5  / /    +8   5   3     5
+Sebők Zsolt             SEZNAAI ++++------++00++00 4  / /    +2   3   5     4
+Szabó Zsolt             SZZSAAI ++++++++++--00++00 4  / /   +10   3   4     4
+Szikszai Gergely Dániel SZGHAFT ------------------ x  x x   -18   x   x     x
+Virág Anita             VIAPABI --++++++++--00--++ 3  / /    +4   4   4     4
+
+Szenczi Attila          SZARAGI +++++++++++-00-- 4--  / ?    +6   2   5     4
+Tóth Attila Szilárd     TOAQACI ....------------ x--  x x   -14   x   x     x
+
+Jelmagyarázat
+=============
+
+  / - Elfogadva
+  x - Nem adott le/nem volt ZH-n
+

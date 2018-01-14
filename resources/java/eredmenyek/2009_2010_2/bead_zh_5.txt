@@ -1,0 +1,35 @@
+5. csoport
+
+              Bead 1 + 2          ZH1          Jegy   Bead 3 + 4        ZH2         Jegy   Elmelet   PE     +/-   Gyakjegy   Megjegyzes
+                             1.  2.  3.  4.                        1.  2.  3.  4.   
+
+1  +BAPPAAI:   5             +   +   +   +     5      5            +   +   -   -    3      2 (13)            +4   4
+2   DADOAAI:   3             +   +   -   -     3      *            +   0   -   -    2      3 (16)             0   3
+3  +FRKPAAI:   5             +   +   +   -     4      5            +   -   -   -    2      1 ( 9)    2 (12)   0   3          PE
+4  +GYPPAAI:   4             +   +   +   +     5      5            +   +   +   0    4      5 (21)           +16   5
+5  +HAJPAAI:   5             +   +   +   +     5      5            +   +   +   -    4      4 (18)            +8   5
+6  +JUAPAAI:   4             +   +   +   +     5      3            +   +   -   -    3      2 (14)             0   3          Class file...
+7  +KAPPAAI:   5             +   +   +   +     5      5            +   +   +   -    4      4 (19)            +8   5 
+8   KAIPAAI:   -------------------------------------------------------------------------------------------------------------
+9  +KATPAAI:   5             +   +   +   +     5      5            +   +   +   -    4      4 (19)           +14   5
+10 +KOAOADI:   4             +   +   +   +     5      5            +   -   -   -    2      2 (12)            +6   4
+11 +MABPAAI:   5             +   +   +   +     5      5            +   +   +   -    4      2 (13)           +12   4          PrimeS..t
+12  MAGPABI:   5             +   +   +   +     5      5            +   +   -   -    3      3 (16)             0   4
+13 +MEZOABI:   5             +   +   +   +     5      5            +   +   +   0    4      3 (16)           +10   5
+14 +NEGOAAI:   5             +   +   +   -     4      5            +   +   +   -    4      3 (17)           +14   5          2.zh/2 atbeszelni
+15 +PAPPAAI:   5             +   +   +   +     5      5            +   +   +   -    4      3 (17)           +14   5
+16 +PIJNAAI:   4             +   +   +   -     4      5            +   -   +   -    3      3 (15)            +8   4
+17 +SAAPAAI:   5             +   +   -   -     3      5            +   +   -   -    3      2 (12)            +4   4
+18 +SIAPAAI:   4             +   -   +   -     3      3            -   -   +   -    2      2 (12)            +4   3
+19 +SVZIAAT:   5             +   0   +   -     3      5            +   -   -   -    2      3 (17)            +3   4
+20 +SZBNAAT:   4             +   +   +   +     5      5            +   -   +   -    3      2 (12)           +10   4
+21  CZCMAAT:   5             +   +   +   +     5      5            +   +   +   -    4      4 (18)            +8   5          Ekezetek... :-)
+
+Jelmagyarazat:
+--------------
+-	Nem adta be
+0	Beadta, kerdeses
++	Beadta, elfogadtam
+*	Megbeszeles targya
+PE	Pot elmeleti resz kell
+PZH	Pot ZH kell

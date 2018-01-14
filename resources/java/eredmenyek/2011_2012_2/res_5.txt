@@ -1,0 +1,36 @@
+IP-cORG/5, IP-08cORG/5, Osztott rendszerek GY. (BSc,08,C), Csütörtök 10:00-12:00, 2-520 (Mesterséges Intelligencia labor)
+
+Név                    EHA     1 2 3 4 5 6 7 8 9  B Sum Zh1    Zh2
+==================================================================
+Bak Péter              BAPRAAI ++++++++++--++++++ o +14   3
+Balla Szabolcs         BASPAAI ++++++--++--00+--- o  +2   2!!!   x4
+Bárdos Gergely         BAGQACI ++++++------00++-- x   0   ~
+Császi Anna            CSAOAAI +++++-+-++--00---- o   0   ~      2
+Cseke Tímea            CSTRAAI ++++++--++--00+++- x  +6   ~
+Csizmadia László János CSLQAAI --++++++----00+-+- o   0   2!!!   2
+Deme Zsolt             DEZPAAI ++++--++++--00--++ x  +4   ~
+Froemel Károly (*)     FRKMAAT ++++++++++--00+-+- o  +8   2
+Gárdián György         GAGRAAI ++++++++++--00++-- o  +8   2      3
+Jurányi Zsolt          JUZRAAI ++++++++++++00++++ o +16   5
+Kiss Ákos              KIARACI ++++++++----00---- x   0   ~
+Kiss Nándor            KINRAAI ++++--++----00++00 o  +2   2
+László Dénes           LADPAAI ++++++++++++--+++- o +12   5
+Lavati Dávid           LADRAAI ++--++++++++00+-++ o +10   3
+Mihályi Zoltán         MIZRAAI ++++++++++++00++++ o +16   5
+Molnár Attila          MOAQACI ++++++--++++--+--- o  +4   2
+Nóll Róbert Béla       NOROAAI --++++--++-------- o  -6p  2
+Peitli Zoltán          PEZQAAI +++++++-++0000+-+- x  +8   ~      2
+Szabó László           SZLRABI +++++++-++00--+0+- o  +7  !!!
+Szédelyi Ádám Izsó     SZAPAAI ++++++++++--00+-++ o +10   3
+Szollár Katalin        SZKKAXA +++++++++++-00---- x  +6   ~
+Vincze Zsolt Viktor    VIZQAAI ++++++++++--++--++ o +10   5
+Zsédely Kata           ZSKOAAI +++++++++++-00+-+- o +10   3
+
+Jelmagyarázat
+=============
+  o - Bemutatta, megvédte
+  x - Nem adott le
+  ~ - Elutasítva/Nem jelent meg
+  ! - Jegy megtagadva
+  p - Pótolva utólag
+

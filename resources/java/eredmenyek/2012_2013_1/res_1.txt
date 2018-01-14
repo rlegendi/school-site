@@ -1,0 +1,24 @@
+Programozás nyelvek 2 GY. (C++, Java, C#) (Web-programozó), 2011 - 2012 / 1. félév
+IK-fszwPNY2EG/1 (BSc,08,C), Péntek 8:00-10:00, D 2-107 (PC2)
+
+Név                   EHA          1 2 3 4 5 6  b 7 8 9 A
+==========================================================
+Balogh Dávid          BADOAAI.ELTE +0+++++++0++ B ++++0000; 14+ - 0- = 14
+Csalami Krisztián     CSKTACI.ELTE ++++++++++++ B 00++0000; 14+ - 0- = 14
+Csiba Ferenc          CSFQAAI.ELTE +++++0++0000 B+00--0000; 8+ - 2- = 6
+Csonka Péter          CSPQAAI.ELTE ++++++++00++ B+++++0000; 15+ - 0- = 15
+Gyurkota Tamás        GYTSAAI.ELTE --+0+++000++ B 00++00--; 8+ - 4- = 4
+Kiss Ádám             KIAPAAI.ELTE ----00------ x ----00--; 0+ - 16- = -16
+Kollár András         KOATABI.ELTE +0+0+0+++000 B 00000000; 6+ - 0- = 6
+Kósa Richárd          KORTAAI.ELTE +0+0--++00-- B +0000000; 5+ - 4- = 1
+Krajczár Adrien       KRATABI.ELTE +0+0+0--+000 x +00000--; 5+ - 4- = 1
+Kránicz Péter         KRPIAAT.ELTE ++---------- B 00--00--; 2+ - 14- = -12
+Kulcsár Norbert       KUNTABI.ELTE +0--+++++0++ B 00++00--; 10+ - 4- = 6
+Mészáros Emese        MEETAAI.ELTE 00--+++0---- x 00--00--; 3+ - 10- = -7
+Oláh Attila           OLATAAI.ELTE ------++---- B*++--00--; 4+ - 14- = -10
+Páll Szabolcs         PASRAAI.ELTE +++0+0+++000 B 00++0000; 9+ - 0- = 9
+Tasnádi Georgina Aina TAZPACB.ELTE +0----+0--+0 B 00--00--; 3+ - 10- = -7
+Turzó Balázs          TUBSAAI.ELTE +++0+0+000++ B 000000--; 7+ - 2- = 5
+Vágási Sándor         VASQAAI.ELTE ------00---- x 00--00--; 0+ - 14- = -14
+
+

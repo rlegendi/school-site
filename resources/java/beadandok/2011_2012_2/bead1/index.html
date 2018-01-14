@@ -1,0 +1,195 @@
+<h1>Java alkalmazások, 2010-2011-II</h1>
+
+<h2>1. Beadandó feladat</h2>
+
+<ul>
+<li><strong>Csoport:</strong> IP-bJAG/1</li>
+<li><strong>Beadási határidõ:</strong> <strike>2011. március 26. (<em>ZH-t utáni hét, hétfõ</em>)</strike> 2012. április 16.</li>
+<li><strong>Bemutatás:</strong> A gyakorlat alkalmával.</li>
+<li>A beadandó feladat elfogadás esetén <em>megfelelt minõsítést</em> kap, amely az év
+végi jegy feltétele. </li>
+<li><p>A beadandókat a küldjétek el e-mailben is, egyetlen ZIP fájlként mellékelve.
+A levél fejléce a következõképp nézzen ki:</p>
+
+<pre><code>csop&lt;csoportszám&gt;_&lt;EHA kód&gt;_bead1
+</code></pre>
+
+<p>Példa:</p>
+
+<pre><code>csop4_LERIAAT_bead1
+</code></pre></li>
+</ul>
+
+<h2>Wumpus Vadászat</h2>
+
+<p>Készítsük el a klasszikus <a href="http://en.wikipedia.org/wiki/Hunt_the_Wumpus">Hunt the Wumpus</a> játék egy egyszerûbb
+változatát Javaban!</p>
+
+<p><img src="wumpus.jpg" alt="Wumpus" title="Wumpus" /></p>
+
+<p>Az eredeti játékot Gregory Yob írta az 1970-es években, és a mai napig megtalálható
+a legtöbb Linux disztribúcióban (például a Caesar klaszteren is kipróbálható egy
+variáns a <code>wump</code> paranccsal).</p>
+
+<h3>Játékszabályok</h3>
+
+<p>Adott egy <code>NxN</code>-es kétdimenziós világ, amely a <em>Wumpus</em> barlangja. A barlangban
+a következõ dolgok találhatók: </p>
+
+<ul>
+<li>Maga a játékos (<code>Player</code>)</li>
+<li>A Wumpus (<code>Wumpus</code>)</li>
+<li>Feneketlen mély gödrök (<code>Pit</code>)</li>
+<li>És persze a rejtélyes kincs, amelyért a játékos alászállt a veszélyekkel teli
+barlangba (<code>Treasure</code>)</li>
+</ul>
+
+<h4>Játékmenet</h4>
+
+<p>A játékos minden körben léphet egyet egy tetszõleges, a jelenlegi pozíciójával
+szomszédos mezõre. Minden lépés elõtt a következõ dolgokat érzékelheti:</p>
+
+<ul>
+<li><em>Széllökéseket</em>, ha valamelyik szomszédos mezõ gödröt tartalmaz.</li>
+<li><em>Bûzt</em>, ha a <em>Wumpus</em> valamelyik szomszédos mezõn áll.</li>
+<li><em>Csillogást</em>, ha a hõn áhított kincs valamelyik szomszédos mezõn található.</li>
+<li>A barlang szélét.  </li>
+</ul>
+
+<p>Miután a játékos lépett, a <em>Wumpus</em> is léphet egy véletlenszerû irányba.
+Amennyiben nem tud továbblépni (mert pl. elérte a barlang legszélét), helyben
+marad, és csak a következõ körben lép újra.</p>
+
+<p>Ha a játékos rálép egy mezõre, ahol gödör van, beleesik, és a játéknak vége (a
+<em>Wumpus</em> tapadókorongos lábbal rendelkezik, õ nem esik bele).</p>
+
+<p>A <em>Wumpus</em> elõszeretettel fogyaszt fiatal kalandozókat, akik betévednek a
+barlangjába, emiatt egy mezõn tartózkodni vele erõsen ellenjavallt magatartás.
+Ebben az esetben szintén vége a játéknak. </p>
+
+<p>Ha a játékos megtalálja a kincset, a játéknak vége, és nyert. A <em>Wumpust</em> nem
+érdekli a kincs, számára az nem több terepakadálynál.</p>
+
+<h4>Paraméterek</h4>
+
+<ul>
+<li>Egyelõre <code>N = 5</code>, de készítsd fel a programot, hogy ez késõbb akár
+tetszõlegesen állítható legyen!</li>
+<li>A világ alapértelmezetten <code>1</code> játékost, <code>1</code> <em>Wumpust</em>, <code>1</code> kincset és <code>3</code>
+gödröt tartalmaz, véletlenszerû pozíciókban (egy pozícióra lehetõleg egy
+kerüljön).</li>
+</ul>
+
+<h4>Irányítás</h4>
+
+<p>Készíts egy egyszerû konzolos felületet, ahol a játékos irányíthatja a játékot.
+Legyen egy <code>cheat</code> funkció is, amely megjeleníti a teljes térképet!</p>
+
+<h4>Példajáték</h4>
+
+<p>Az alábbi példajáték szemlélteti a csalás funkciót is. A <code>.</code> üres területeket,
+a <code>@</code> a játékost, a <code>P</code> a gödröket, a <code>W</code> a <em>Wumpust</em>, a <code>T</code> pedig a kincset
+jelöli a kirajzolt térképen. Az irányítás az <code>n</code> (<em>north</em>), <code>s</code> (<em>south</em>), <code>e</code>
+(<em>east</em>) és <code>w</code> (<em>west</em>) karakterekkel történik.</p>
+
+<pre><code>$ java wumpus.Game
+=== Welcome to the Wumpus Lair ===
+You are at the edge of the world.
+Perception: -, -, -
+Which direction to go? cheat
+.P..P
+..T..
+...P.
+....W
+...@.
+
+You are at the edge of the world.
+Perception: -, -, -
+Which direction to go? n
+
+Perception: breezy, smelly, -
+Which direction to go? cheat
+.P..P
+..T..
+...P.
+...@W
+.....
+
+Perception: breezy, smelly, -
+Which direction to go? w
+
+Perception: -, -, -
+Which direction to go? cheat
+.P..P
+..T..
+...PW
+..@..
+.....
+
+Perception: -, -, -
+Which direction to go? n
+
+Perception: breezy, smelly, gloomy
+Which direction to go? n
+Congratulations! You have found the treasure!
+</code></pre>
+
+<h3>Technikai részletek</h3>
+
+<ul>
+<li>Mind a játékos, mind a <em>Wumpus</em> egyetlen mezõt léphet jobbra, balra, fel vagy
+le; átlósan lépni nem lehet. Ha egészen konkrétak akarunk lenni:
+<a href="http://mathworld.wolfram.com/vonNeumannNeighborhood.html">Neumann-szomszédság</a> alapján léphetnek mindketten (ahol <code>r = 1</code>).</li>
+<li>A <em>Wumpus</em> lépés esetén választ véletlenszerûen két számot a <code>[-1, 1]</code>
+intervallumból, majd a saját koordinátáihoz külön-külön hozzáadja. Így
+elõfordulhat, hogy nem lép tovább az adott körben. Biztos talált valamely
+elõzõ kalandorból 1-2 csontot, amelyen elnyammoghat :-)</li>
+</ul>
+
+<h4>Megvalósítás</h4>
+
+<p>A feladat számos megközelítéssel megoldható, ebbõl egyhez található egy példa
+tesztfájl itt: <a href="GameTest.java">GameTest.java</a>. Amennyiben ez segít, nyugodtan
+használjátok, de bátran térjetek el tõle, ha indokoltnak találjátok, vagy csak
+más megközelítést kényelmesnek találtok! <em>A hangsúly most a kísérletezésen van!</em></p>
+
+<ul>
+<li>A játék szereplõi egy <code>GameObject</code> leszármazottai (<code>Pit</code>, <code>Player</code>,
+<code>Treasure</code>, <code>Wumpus</code>).</li>
+<li>A <code>GameObject</code> legfontosabb tulajdonsága a pozíció (<code>Position</code>), ahol
+található (ehhez megfelelõ elérõ és beállító függvényekkel is rendelkezik).</li>
+<li>Egy <code>Position</code> példány tudja az <code>x</code>, <code>y</code> értékeket, megfelelõ <code>equals()</code>,
+<code>hashCode()</code>, és <code>toString()</code> implementációkkal rendelkezik, valamint néhány
+segédfüggvénnyel megkönnyíti a használatot (pl. szomszédság, lekérdezése,
+eltolás, véletlenszerû módosítás).</li>
+<li>A játéktér egy egyszerû kétdimenziós <code>Tile</code> tömb.</li>
+<li>Egy <code>Tile</code> példányon egyszerre több <code>GameObject</code> is elõfordulhat (pl. a
+játékos, a kincs és maga a <em>Wumpus</em> is), ezeket érdemes egy tetszõleges
+adatszerkezetben tárolni (lista, halmaz).</li>
+<li>A <code>Tile</code> néhány segédfüggvénnyel is rendelkezik, pl. van-e rajta
+csillogó, szeles vagy bûzlõ <code>GameObject</code>.</li>
+<li><p>Az irányokat reprezentálhatod egy egyszerû felsorolási típussal. Ez sokban
+hasonlít a C++ <code>enum</code> típusaihoz, azonban vannak specialitásai (részletek
+<a href="https://github.com/rlegendi/ELTE-javagyak/blob/master/D-enum/D-enum.md">itt</a> és <a href="https://github.com/rlegendi/ELTE-javagyak/blob/master/D-enum/enum-tutorial-full-hun.md">itt</a>):</p>
+
+<pre><code>public enum Direction {
+    NORTH, SOUTH, EAST, WEST;
+}
+</code></pre></li>
+</ul>
+
+<h2>Továbbfejlesztési lehetõségek</h2>
+
+<ul>
+<li>Az eredeti játék térképe valójában nem egy sima kétdimenziós világ: egy
+barlangból három járat vezet egy másikba (tipikusan egy
+<a href="http://en.wikipedia.org/wiki/Dodecahedron">dodekaéderrel</a> szokták szemléltetni).</li>
+<li>Egyes változatokban találhatók <em>denvérek</em> is, amelyek véletlenszerû üres
+barlangba repítik a velük egy pozícióra vetõdõ óvatlan játékosokat (mindig
+ugyanoda, nem mozognak, és a <em>Wumpus</em> túl nehéz ahhoz, hogy felemeljék).</li>
+<li>Általában a játékos rendelkezik egy íjjal és néhány nyílvesszõvel is
+(<code>k = 3-5</code>). Ezeket ellõheti egy tetszõleges irányba, és ha a <em>Wumpus</em> az
+adott irányban lévõ szomszédos területen tarózkodik, a játékos eltalálja és
+megnyerte a játékot (a nyílvesszõk korlátozottan <em>Wumpus</em>-követõek). Ha nincs
+ott a <em>Wumpus</em>, a nyílvesszõ zajt csap, és a <em>Wumpus</em> mozoghat.</li>
+</ul>
